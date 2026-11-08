@@ -1,0 +1,318 @@
+{
+  "id": "frames-112",
+  "question": "As of the financial year ending July 31st 2023, what was the size of the endowment at the university attended by rugby player Fred McLeod?",
+  "answer": "£559.8 million",
+  "recordedWith": "openai/gpt-6.1-terra",
+  "messages": [
+    {
+      "role": "user",
+      "content": "As of the financial year ending July 31st 2023, what was the size of the endowment at the university attended by rugby player Fred McLeod?"
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_0",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "Fred McLeod rugby university"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_0",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Fred McLeod (rugby union): Fred McLeod (2 May 1939 – 25 December 2019) was a Scottish rugby union player. He became the 110th President of the Scottish Rugby Union. McLeod went to\nMacLeod: MacLeod, McLeod and Macleod (/məˈklaʊd/ mə-KLOWD) are surnames in the English language. The names are anglicised forms of the Scottish Gaelic MacLeòid\nSydney University Rugby League Football Club: Sydney University Rugby League Football Club (SURLFC) is a rugby league team currently playing in the Saturday Metro League competition. The University of\n1944 Auckland Rugby League season: The 1944 Auckland Rugby League season was its 36th. The Auckland Rugby League allowed the Point Chevalier club to enter the first grade competition which\nList of University of Sydney people: Research Organisation Hugh McLeod Gordon – veterinary parasitologist Daria Nina Love – veterinary microbiologist Gordon McClymont – agricultural scientist"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_1",
+          "toolName": "get_page",
+          "input": {
+            "title": "Fred McLeod (rugby union)"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_1",
+          "toolName": "get_page",
+          "output": {
+            "type": "text",
+            "value": "Fred McLeod (2 May 1939 – 25 December 2019) was a Scottish rugby union player. He became the 110th President of the Scottish Rugby Union.\n\n\n== Rugby union career ==\n\n\n=== Amateur career ===\nMcLeod went to Daniel Stewart's College in Edinburgh. He played rugby for the school team.\nHe then played for Stewart's College FP. He played for the club for 23 years until in 1970 a detached retina forced him to quit his playing career.\n\n\n=== Administrative career ===\nHe became a club selector of Stewart's College FP in 1970.\nWhen Stewart's College FP and Melville College FP merged in 1973 to form Stewart's Melville, McLeod became Secretary of the new club. He later became President of  Stewart's Melville.\nIn 1979 he was secretary of the Co-Optimists. He managed them to the final of the Hong Kong Sevens in 1981 and the quarter-finals in 1986. He also took the side on tour to Zimbabwe and later became a President of the Co-Optimists.\nHe was elected to the SRU committee in 1981.\nHe became SRU Vice-president in 1985.\nHe became the 110th President of the Scottish Rugby Union. He served one year from 1996 to 1997.\nHis spell of the Presidency was notable as he had to deal with the new professional era of rugby union in Scotland. Despite the SRU professionalising the District sides, the situation was tense as many still argued that the club sides should be turned professional instead.\nMcLeod was one of the three IRB members who recommended professionalism for the sport in a 1995 report. The National newspaper concluded:  'Fred got pelters for that around Murrayfield but stood his ground and was proven correct' and also backed Jim Telfer in his view that the District sides should be professional and not the club sides.\nMcLeod also had to deal with England's expulsion from the Five Nations Championship in 1996. This was short-term and England played in the next tournament.\nHe had to step in as SRU chairman in 2005 when the previous chairman David Mackay and chief executive Phil Anderton were forced out of the post. This lasted until the summer of that year when Allan Munro took over as chairman; and Gordon McKie became the chief executive.\n\n\n== Tributes ==\nAndy Irvine:\n\nFreddie was rugby through and through. He was a great servant to the game and I really  enjoyed working with him.\n\n\n== References =="
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_2",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "\"Fred McLeod\" rugby \"university\""
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_2",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Fred McLeod (rugby union): Fred McLeod (2 May 1939 – 25 December 2019) was a Scottish rugby union player. He became the 110th President of the Scottish Rugby Union. McLeod went to\n1908 in sports: Burger (Germany) Major tournaments British Open – James Braid US Open – Fred McLeod Other tournaments British Amateur – Edward Lassen US Amateur – Jerome\nIain Todd: He played rugby for the school. On leaving school Todd went to the University of Glasgow to study medicine. While he was at Glasgow University he played\nMacLeod: Scottish footballer Erin McLeod (born 1983), Canadian soccer player Fred McLeod (golfer) (1882–1976), Scottish-American golfer G. Scott MacLeod (born\nApril 25: 1878 – William Merz, American gymnast and triathlete (died 1946) 1882 – Fred McLeod, Scottish golfer (died 1976) 1887 – Kojo Tovalou Houénou, Beninese lawyer"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_3",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "\"Fred McLeod\" \"university\" rugby player"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_3",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Fred McLeod (rugby union): Fred McLeod (2 May 1939 – 25 December 2019) was a Scottish rugby union player. He became the 110th President of the Scottish Rugby Union. McLeod went to\nIain Todd: Iain Todd (1924–2017) was a Scottish rugby union player. He was the 109th President of the Scottish Rugby Union. Born in Clouston Street, Glasgow, Todd\nMacLeod: 1930s), Scottish footballer Erin McLeod (born 1983), Canadian soccer player Fred McLeod (golfer) (1882–1976), Scottish-American golfer G. Scott MacLeod (born\nApril 25: 1878 – William Merz, American gymnast and triathlete (died 1946) 1882 – Fred McLeod, Scottish golfer (died 1976) 1887 – Kojo Tovalou Houénou, Beninese lawyer\nDeaths in September 2019: heart attack. Joe McGhie, 72, Australian rules footballer (Footscray). Fred McLeod, 67, American sportscaster (Cleveland Cavaliers, Detroit Pistons). Jarzinho"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_4",
+          "toolName": "get_page",
+          "input": {
+            "title": "Iain Todd"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_4",
+          "toolName": "get_page",
+          "output": {
+            "type": "text",
+            "value": "Iain Todd (1924–2017) was a Scottish rugby union player. He was the 109th President of the Scottish Rugby Union.\n\n\n== Rugby Union career ==\n\n\n=== Amateur career ===\nBorn in Clouston Street, Glasgow, Todd went to Hillhead High School with his brother, David Todd. He played rugby for the school. On leaving school Todd went to the University of Glasgow to study medicine.\nWhile he was at Glasgow University he played for Glasgow University rugby union side.\nAfter leaving the university, Todd then played for Hillhead HSFP.\n\n\n=== International career ===\nWhile in Burma - now Myanmar - with the Royal Army Medical Corps he played for a Burma XV against the British Army.\n\n\n=== Referee career ===\nHe became Hillhead RFC 1st XV's touch judge. He often packed his Hillhead strip in his linesman kit bag - unbeknownst to his wife - in case the 'team was ever short'.\n\n\n=== Administrative career ===\nHe served on the Glasgow District committee from the mid-1970s.\nHe was elected to the SRU general committee in 1980.\nTodd became the 109th President of the Scottish Rugby Union. He served the standard one year from 1995 to 1996.\n\n\n== Military career ==\nTodd left Hillhead High School in 1942. He joined the Home Guard for the rest of the Second World War while studying at university. He then joined the Royal Army Medical Corps in 1948 and went to Myanmar as part of the Burma mission.\n\n\n== Medical career ==\nHe went to Glasgow University to study medicine in 1942. After returning from Myanmar he completed his residency at the Western Infirmary. He joined a General Practice in Govan with the former swimmer Dr Mirrlees Chassels.\n\n\n== Other interests ==\nHis grandfather had a farm in Campeltown, Kintyre and he developed a love of Argyll. \nHe joined the Loch Lomond Sailing Club, which is closer to Glasgow than to Campeltown. He became a long-time member and knew the loch intimately.\n\n\n== Tributes ==\nJohn Beattie recalled a time when Todd helped him through an injury:\n\nIt was my career-ending ligament injury. Iain’s daughter lived round the corner from our top-floor flat in Broomhill and Iain was very generous in wanting to help. I had a pin through my knee and kept yelping as he pushed me up the stairs grunting: ‘Just a few more steps…’ he was a truly lovely man and a huge part of my early life. Old fashioned and honest.\n\nAlan Hosie, former international referee and one time SRU President:\n\nIain was immensely popular within rugby, and never more so than when he was international tickets allocation secretary and convener; then, he was everybody’s friend!\n\n\n== References =="
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_5",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "rugby \"Fred McLeod\" \"university\" endowment"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_5",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "No results."
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_6",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "\"Frederick McLeod\" rugby university"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_6",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Norman McLeod (rugby union): Norman Frederick McLeod (30 June 1856 – 20 April 1921) was an English rugby union forward who represented the England national side in 1879. He later served\n1961 New Year Honours:  Women&#039;s Royal Naval Service. Chief Engine Room Artificer William Frederick Mcleod, D/MX 61956. Second Lieutenant (SD) (formerly PL/X 4501 Regimental"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_7",
+          "toolName": "get_page",
+          "input": {
+            "title": "Norman McLeod (rugby union)"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_7",
+          "toolName": "get_page",
+          "output": {
+            "type": "text",
+            "value": "Norman Frederick McLeod (30 June 1856 – 20 April 1921) was an English rugby union forward who represented the England national side in 1879. He later served as an engineer in the Indian Public Works Department.\n\n\n== Early life and education ==\nMcLeod was born on 30 June 1856 in Madras, Madras Presidency, British India, the son of Lieutenant-General William Couperus McLeod and Jane Anne MacLeod. He was baptised in Madras on 12 November 1856.\nHe was educated at Clifton College. In 1875 he gained admission to the Royal Indian Engineering College at Cooper's Hill, placing second in the entrance examination list.\n\n\n== Rugby career ==\nWhile a student at Cooper's Hill, McLeod played for the Royal Indian Engineering College XV. He later played at club level for Richmond F.C., appearing in fixtures during the 1878–79 season.\nHe was selected for England in 1879 and won his first international cap on 10 March 1879 against Scotland at Raeburn Place, Edinburgh. He then played in the match against Ireland  on 24 March 1879.\n\n\n== Engineering career ==\nMcLeod entered the Indian Public Works Department in 1878. He served in the Irrigation Branch in the North-Western Provinces and Oudh, including work on the Ganges Canal.\nIn 1887 he was granted eighteen months’ furlough from his post in the Meerut Division of the Ganges Canal. In 1892 he was appointed to officiate as Executive Engineer, North Division, Ganges Canal. In 1897 he was appointed Superintendent of Works, Fatehpur Division, Lower Ganges Canal.\n\n\n== Later life and death ==\nMcLeod was associated with the East India United Service Club, St James's Square, London.\nHe died on 20 April 1921 at 99 Barkston Gardens, South Kensington, Middlesex. He was buried at Brompton Cemetery on 25 April 1921.\n\n\n== References =="
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_8",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "\"Fred McLeod\" rugby university player college"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_8",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Fred McLeod (rugby union): Fred McLeod (2 May 1939 – 25 December 2019) was a Scottish rugby union player. He became the 110th President of the Scottish Rugby Union. McLeod went to\nApril 25: 1878 – William Merz, American gymnast and triathlete (died 1946) 1882 – Fred McLeod, Scottish golfer (died 1976) 1887 – Kojo Tovalou Houénou, Beninese lawyer\nDeaths in September 2019: heart attack. Joe McGhie, 72, Australian rules footballer (Footscray). Fred McLeod, 67, American sportscaster (Cleveland Cavaliers, Detroit Pistons). Jarzinho\nGraeme McDowell: engineering at Queen&#039;s University in Belfast, then transferred to the University of Alabama at Birmingham, where he played college golf through the spring\nRory McIlroy: complete the modern career grand slam—after Gene Sarazen, Ben Hogan, Gary Player, Jack Nicklaus, and Tiger Woods—and the first European to do so. McIlroy"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_9",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "\"Fred McLeod\" \"university\" rugby 1895"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_9",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "MacLeod: Scottish footballer Erin McLeod (born 1983), Canadian soccer player Fred McLeod (golfer) (1882–1976), Scottish-American golfer G. Scott MacLeod (born\nGraeme McDowell: Irish. He is with the Irish professional golf team – it&#039;s the same as the rugby. Donegan, Lawrence (10 July 2010). &quot;Graeme McDowell is on a mission to prove\nRory McIlroy: .. I won&#039;t be making those mistakes again.&quot; McIlroy is a fan of Ulster Rugby and has interrupted his busy golf schedule to attend matches at Ravenhill"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_10",
+          "toolName": "get_page",
+          "input": {
+            "title": "Daniel Stewart's College"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_10",
+          "toolName": "get_page",
+          "output": {
+            "type": "text",
+            "value": "Erskine Stewart Melville (ESM) is an independent day school located in Edinburgh, Scotland managed by the Merchant Company of Edinburgh.  \nThe coeducational school was formed through the merger of all-girls' Mary Erskine School and the all-boys' Stewart's Melville College in 2026. The Mary Erskine School was founded in 1694 as the Merchant Maiden Hospital, whilst Stewart's Meville College was founded in 1972 following the merger of Daniel's Stewart's College and Melville College. Daniel Stewart's College opened as Daniel Stewart's Hospital in 1848, being renamed to Daniel Stewart's College in 1870. Melville College opened as the Edinburgh Institution for Languages and Mathematics in 1832, and acquired its final name in 1936. Prior to the 2026 merger, the schools shared a coeducational Junior School, Sixth Form, and extra-curricular program.\nThe school is spread across three campuses, with the Senior School located within David Rhind's 1855 Scots Baronial Old College at Comely Bank, the Junior School at Ravelston, and the playing fields at Inverleith. In 2014, the combined school claimed to be the largest independent school in Europe. \nThe school is part of the Headmasters' and Headmistresses' Conference.\n\n\n== History ==\nThe coeducational Erskine Stewart Melville was formed  through the merger of the all-girls' The Mary Erskine School and the all-boys' Stewart's Melville College in 2026. \n\n\n=== The Mary Erskine School ===\n\nThe Merchant Maiden Hospital was founded by Mary Erskine, a prominent Edinburgh banking businesswoman, in 1694 at the Merchant Company of Edinburgh's first Merchants' Hall in the Cowgate.  \nInitially founded as a hospital school for the daughters of Edinburgh burgesses, it was refounded by act of Parliament as a day school in 1870, and renamed the Edinburgh Educational Institution For Girls. By this time, the school had grown to 1,200 students, and in 1871 it moved into Queen Street, where it became familiarly known as Queen Street School. In 1889, the school was renamed again as Edinburgh Ladies' College, before acquiring its final name - The Mary Erskine School - in 1944. In 1966, the school moved to Ravelston, Murrayfield. \n\n\n=== Stewart's Melville College ===\n\nStewart's Melville College originated from the merger of the Merchant Company of Edinburgh's two all-boys' day schools - Daniel Stewart's College and Melville College - in 1972.\n\n\n==== Daniel Stewart's College ====\n\nDaniel Stewart's Hospital was founded in memory of Daniel Stewart, an Edinburgh-based merchant and Macer to the Court of the Exchequer. Upon his death in 1814, Stewart left a sum of money and instructions that, once it had reached £40,000, it was to be used to create a hospital for needy boys within the city.\nLocated on the current Queensferry Road campus, the David Rhind-designed Old College was opened in 1855. Refounded as Daniel Stewart's College following the passage of the passage of the Education Act of 1872, the school became fee-paying. From 1924 onwards, the College's uniform was a cap with red and black stripes and a black blazer with red trim.\n\n\n==== Melville College ====\nMelville College was founded as The Edinburgh Institution for Languages and Mathematics by the Rev. Robert Cunningham in 1832. Unusually for the time, the school placed it's teaching emphasis on then-modern subjects, such as science, rather than classical subjects.\nInitially located on George Street, the school moved to Hill Street, and then to 8 Queen Street, which was purchased in 1853. In 1920, the Institution moved again to Melville Street, in the city's West End, after which it was renamed in 1936 to Melville College. About the same time, the school's caps and blazers were changed to bright red.\n\n\n==== Merger ====\nIn 1972, the two schools merged to become Daniel Stewart's and Melville College - later shortened to Stewart's Melville College. \nFollowing the merger, the Colleges' uniforms were amalgamated; Melville College's bright red trim replaced the Daniel Stewart's College blazers' dark red trim for general use, whilst the red blazer of Melville College was adopted for those awarded colours (e.g. for sporting and other achievements). Later the red blazer was limited to the head boy and his deputies, with colours being signified with a particular tie. \n\n\n=== Erskine Stewart Melville Schools ===\nErskine Stewart's Melville Schools (ESMS) was formed in 1977 through the Merchant Company's consolidation of The Mary Erskine School and Stewart's Melville College.  Whilst the senior schools retained their distinct identities, a coeducational nursery and junior school was formed, with Nursery to Primary 3 housed on Mary Erskine's Ravelston campus, and Primary 4 to 7 on Stewart's Melville's Comely Bank campus. The two campuses lie approximately one mile (two km) apart. A combined, coeducatioaln sixth form was also founded, with teaching split across both sites.\nIn 2013, Stewart's Melville was voted the Scottish Independent School of the year by the Sunday Times newspaper and Mary Erskine School was voted the Scottish Independent School of the year in 2012. \nIn 2014, the combined Erskine Stewarts Melville Schools, with over 2,700 pupils, claimed to be the largest independent school in Europe. In the same year, a programme of improvement work on buildings of the junior school was announced, with work beginning in 2018.\nIn February 2023, it was announced by principal Anthony Simpson that the boarding house would close by July 2025, citing costs and the facility not being compatible with the school's vision for the future. The allocation of resources towards the boarding house was not sustainable, as at the time of the announcement, there were only 19 boarders, accounting for less than 3% of all pupils at the school.\n\n\n=== Erskine Stewart Melville ===\nIt was announced in October 2024 that Stewarts Melville will undergo a merger with its sister school, Mary Erskine, in the beginning of the 2026/2027 academic year and the combined school would be called Erskine Stewart Melville (ESM). The school stated that it would create a more inclusive community and it would also be more financially efficient.\n\n\n== Academics ==\n\n\n=== Examinations ===\nErskine Stewart Meville pupils predominantly sit for Qualifications Scotland (QS) examinations, including National 5, Higher and Advanced Higher papers. English GCE Advanced Level examinations can also be sat in art, product design, and music. \nIn 2014 and 2016, Mary Erskine's was top of the Sunday Times list of independent secondary schools in Scotland using the Scottish Examinations system and in 2015 was judged the best Scottish School by Advanced Highers by Best-Schools. In 2025, it was reported that 91% of National 5 results at the school achieved levels A or B and 89% of Higher Grade results were also at levels A or B. \n\n\n=== Destinations ===\nAlmost all leavers were planning to go on to higher education. In 2025 Which School Advisor reported that typically 60% of students go on to study in Scottish universities, 30% to English, Northern Irish or Welsh universities and some to North American Universities.\n\n\n== Sport ==\nThe school is involved in a wide variety of sports, most of which are coached by mixture of staff from general departments as well as the Physical Education (PE) department staff.  Sports include Aerobics, Athletics, Badminton, Basketball, Cricket, Cross-country, Curling, Dance, Equestrian, Fencing, Football, Golf, ice skating, Highland Dancing, Hockey, Sailing, Skiing, Squash, Swimming, Tennis and Volleyball.\n\n\n=== Facilities ===\nRavelston Sports Club is a large on-site sports centre and gym opened in 2000 and is split across both campuses. The sports centre is mainly used by pupils for physical education lessons and sports training (such as swimming, basketball, badminton, short tennis and table tennis) but is also open to members of the public for a monthly membership fee. There is also a school shooting range located at the Ravelston campus. \nExtensive rugby, cricket, hockey pitches and athletics facilities are also located at the school's sports grounds in Inverleith, two miles north of the school. The main stadium at Inverleith dates back to the 1890s and was the main ground of the Scotland national rugby union team until 1925.\n\n\n=== Rugby ===\nStewart's Melville College has won the Scottish Rugby Schools Under 18 Cup six times; in 1999 (in their first year of entering), 2006, 2011, 2016, 2019 and most recently in 2024. \nStewart's Melville RFC, the successor to the school's Former Pupils' Rugby Club, was founded in 1973, following the merger of Daniel Stewart's College and Melville College. The club currently plays in Division 2 of the Scottish League Championship.\n\n\n=== Hockey ===\nErskine Stewart Melville fields both boys' and girls' hockey teams during the winter term. Since at least 2007, the girls' program has been noted for excelling in hockey, with over six teams competing at senior level and many pupils playing at National level. \nErskine Stewart's Melville Hockey Club, the school's Former Pupils' Hockey Club, was founded in 1987.\n\n\n=== Football ===\nStewart’s Melville College won the Scottish Independent Schools (SISFA) in 2025. At the Indodrill Stadium in a 4-1 victory over St Aloysius College\n\n\n=== Cricket ===\n\n\n=== Athletics ===\n\n\n=== Swimming ===\n\n\n=== Golf ===\nStewart's Meville College Former Pupils' Golf Club was founded in 1887 and is based at Murrayfield Golf Club.\n\n\n== Arts ==\n\n\n=== Music and drama ===\nAlmost 800 children sing regularly in choirs performing in all kinds of venues from the Usher Hall to St Peter's in the Vatican, from Songs of Praise to sharing the stage with the Scottish Chamber Orchestra. \nThe Junior School had provided the choir to the annual Royal Edinburgh Military Tattoo since 2013. \nIn addition to this 300 children from Primary 4 to senior sixth Form play in school orchestras and bands (including Pipe Band and Jazz Band).\nBoys and girls from the Junior School have had favourable reviews while performing over 680 times in professional West End touring musicals including over 220 appearances in Joseph and the Amazing Technicolor Dreamcoat. Senior pupils have won prestigious scholarships to American Drama Schools and starred on TV.\n\n\n==== Tom Fleming Centre ====\n\nBetween 2005-07, the school's Victorian assembly hall, built within the Old College's former courtyard, was converted into an 800-seat performing arts centre. Retractable seating provides a variety of possible configurations  It is available for use by the public and is used as a venue during the Edinburgh Festival Fringe. The £3.5 million project, was part-funded by donations by current parents  and former pupils.  \nIn 2011, actor John Cairney unveiled the new name for the centre, the Tom Fleming Centre for Performing Arts, named after former pupil Tom Fleming, one of Scotland's leading broadcasters.\n\n\n== Culture ==\nThe school is non-denominational but claims to have a broadly Christian outlook.\n\n\n=== Carbisdale ===\nSince 1965, the school organised an outdoor education programme for the boys of SMC and the girls from MES in the third year. It took place in the north of Scotland, based for over forty years at Carbisdale Castle Youth Hostel, Easter Ross, until its closure in 2011 required accommodation to relocate to Aviemore. The camp was also abandoned in 2020 and 2021, due to coronavirus restrictions. It returned in 2022; however later in 2022, Carbisdale Castle was sold and is now a private residence.\nSince 1965, the school has organised an outdoor education programme for the boys of SMC and the girls from MES in the third senior year. It is located in the north of Scotland at Carbisdale Castle,  a historic castle which has been converted into a Youth Hostel. The trip consists of a number of outdoor activities that vary from year to year including hillwalking, orienteering, golf, kayaking, team-building activities, visits to nearby historic sites and environmental studies of the surrounding woodland. Carbisdale Castle has a plaque of the Stewart's Melville College badge in its foyer above the main door.\nEngcongolweni is a village in Northern Malawi and it is the home to the unusually named \"Edinburgh Girls’ High School\". It is a secondary school for about 150 girls (in about 2016). The name of the school is a nod towards the Mary Erskine School as the schools are partners and the school plans to visit Malawi every two years.\n\n\n=== School uniform and colours ===\nIn 1994 the school adopted a uniform which included a navy blue and red kilt designed by the company Kinloch Anderson, a blue blazer, white blouse and red tie. Colours and half-colours could be awarded in Sixth Form to pupils who excel in non-academic areas (such as music, drama and individual sports).\nIn 2026, after the merger into Erskine Stewart Melville,  primary and secondary students will use a blue blazer with a red trim while sixth form students will use a red blazer.\nIn 2026 the uniform of the combined Erskine Stewart Melville school became a dark blue blazer with red trim for primary and secondary students and a red blazer for sixth form students.\n\n\n=== Former Pupils Guild ===\nUpon leaving MES, students have the opportunity to join the Mary Erskine Former Pupils Guild which was founded in 1884.\n\n\n=== Senior sixth form ===\n\nWhen pupils enter the sixth (final) form they are merged with the boys from Stewart's Melville College.  Classes take place at both school sites, with buses operating regularly to transfer students between the two.  There are approximately 240 students in a normal year group.\nIn sixth form students are largely independent. Students have a tutor (twinned with another at the other site) with whom they register in the morning, and who also helps them with their British university UCAS applications. \nAll members of the sixth form are prefects and are expected to help out with duties around the school sites. The maintenance of the prefect body is the responsibility of a Head Boy and a Head Girl, along with five deputy head boys and five deputy head girls.\n\n\n== Erskine Stewart Melville Junior School ==\nErskine Stewart Melville (ESM) is an independent nursery and junior day school located in Edinburgh, Scotland managed by the Merchant Company of Edinburgh.\n\n\n== Notable former staff ==\nElisabeth West in 1708, diarist\n\n\n== Former Headmasters ==\nHerbert James Liddle Robbie (1904–1964), headmaster of Daniel Stewart's from 1946 to 1964\n\n\n== Notable alumni ==\n\nThe school maintains a Former Pupils Club, which organises social events throughout the year.  There are branches throughout the UK and abroad.\n\nAcademia and science\n\nThomas David Anderson (1853–1952), astronomer who discovered many temporary and variable stars (novae)\nProfessor James Barr (1924–2006), a radical theologian who was professor at Montreal, Edinburgh, Manchester, Oxford, Princeton and Vanderbilt\nJames Bertram (Carnegie secretary) (1872–1934)\nErskine Beveridge (1851–1920), textile manufacturer, historian and antiquary\nProfessor Henry Calderwood (1830–1897), Professor of Moral Philosophy at Edinburgh University and Fellow of the Royal Society of Edinburgh\nJames Ireland Craig (1868–1952), meteorologist (dux 1885)\nProfessor Maurice Ewing (1912–1999), First professor of surgery at Melbourne University, Australia\nSir William Tennant Gairdner (1824–1907), Professor of Medicine at the University of Glasgow and President of the British Medical Association\nMaria Gordon DBE, (1864–1939), geologist and palaeontologist, first woman to get a DSc from London University and a PhD from LMU Munich\nWilliam Aitcheson Haswell (1854–1925), Scottish-Australian zoologist specialising in crustaceans, winner of the 1915 Clarke Medal\nAndrew John Herbertson (1865–1915), geographer and Professor in Geography at Oxford University\nEllen Charlotte Higgins (1871–1951), principal of the Royal Holloway College, University of London\nIsabel Emslie Hutton CBE (1887–1960), physician\nSir James Charles Inglis (1851–1911), British civil engineer, President of the Institution of Civil Engineers and General Manager of the Great Western Railway\nProfessor Tom W. B. Kibble (1932–2016), theoretical physicist, co-discovery of the Higgs mechanism and Higgs boson\nSir Peter Redford Scott Lang – Regius Professor of Mathematics at St Andrews University\nSheila Scott Macintyre (1910–1960), mathematician best known for her work on the Whittaker constant\nAnna MacGillivray Macleod (1917–2004), first female professor of Brewing and Biochemistry in the world\nElizabeth Malloch (1910–2000), educator and priest\nProfessor Arnold Maran (1936–2017), surgeon, President of the Royal College of Surgeons of Edinburgh\nGeorge McGavin (born 1954), entomologist\nAnnie Hutton Numbers (1897–1988), British mathematician and chemist\nIshobel Ross (1890–1965), Scottish World War I nurse and diarist\nWinifred Rushforth OBE, (1885–1983), Jungian psychoanalyst\nJohn Smith (1825–1910), dentist who founded the Royal Hospital for Sick Children, Edinburgh and was Surgeon Dentist to Queen Victoria\nSir Fraser Stoddart (1942–2024), chemist, Nobel Prize in Chemistry 2016, Professor of chemistry at Northwestern University, USA (supramolecular chemistry and nanotechnology), awarded Albert Einstein World Award of Science\nSir John Thomson-Walker (1871–1937), Hunterian Professor of Surgery at the Royal College of Surgeons of England and leading surgeon in the field of urology\nRamsay Traquair (1840–1912), naturalist and palaeontologist, leading expert on fossil fish, awarded the Royal Medal by the Royal Society and the Lyell Medal\nMedia and arts\n\nIan Stuart Black (1915–1997), novelist, playwright and screenwriter\nMichael Boyd (director) (born 1955), Artistic Director of the Royal Shakespeare Company\nTom Fleming (1927–2010), actor and television commentator\nSir William Russell Flint (1880–1969), watercolour painter and president of the Royal Society of Painters in Watercolours\nStuart Henry (1942–1995), popular radio disc jockey of the 1960s and 70s\nPhilip Kerr (1956–2018), writer\nAlexander Moffat (born 1943), artist, Head of Painting, Glasgow School of Art\nCatherine Grant Furley Smith (1858–1944), poet, journalist, novelist\nLynda Cochrane, pianist\nMargaret Stirling Dobson, painter, printmaker and author\nJoanna Drew (1929–2003), art gallery director and arts administrator\nJenny Foulds, actress, e.g. Two Thousand Acres of Sky)\nAlison Geissler (1907–2011), glass engraver\nFrances Grey, actress \nDorothy Mackie Low (1916–2002), writer of romance novels who used the pseudonyms Dorothy Mackie Low, Lois Paxton, and Zoë Cass\nFreya Mavor, actress\nChloe Pirrie, actress\nMargaret Stoddart (1865–1934), notable New Zealand artist\nSylvia Whitman, proprietor of Shakespeare and Company\nMadeleine Worrall, actress\nLaw and politics\n\nLord Brailsford (S. Neil Brailsford) (born 1954), Senator of the College of Justice and Supreme Courts Judge\nSir Martin Chamberlain (born 1973), a High Court Judge of England and Wales\nSir William Young Darling (1885–1962), Member of Parliament for South Edinburgh and Lord Provost of Edinburgh\nSir Andrew Henderson Leith Fraser (1848–1919), Lieutenant Governor of Bengal between 1903 and 1908\nSir James Gibson, 1st Baronet (1849–1912), Lord Provost of Edinburgh and Member of Parliament for Edinburgh East\nAdam Gifford, Lord Gifford (1820–1887), Scottish Advocate and Judge\nRobert McIntyre (1913–1998), politician, leader of the Scottish National Party (SNP) and the SNP's first elected Member of Parliament\nJ P Mackintosh (1929–1978), academic and British Labour politician of the 1960s and 70s. Leading advocate of Scottish devolution\nSir Thomas Brash Morison (1868–1945), Liberal Member of Parliament for Inverness, Solicitor General for Scotland, Privy Counsellor and Lord Advocate\nSir George Touche 1st Baronet (1861–1935), Conservative Member of Parliament and founder of one of the firms that created Deloitte Touche Tohmatsu\nSir James Wilson (1849–1929), New Ze"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "Wikipedia’s [Fred McLeod article](https://en.wikipedia.org/wiki/Fred_McLeod_(rugby_union)) identifies his school as Daniel Stewart’s College but does not name a university he attended. I therefore can’t verify the requested endowment figure.\n\nANSWER: Unable to determine from Wikipedia."
+        }
+      ]
+    }
+  ]
+}

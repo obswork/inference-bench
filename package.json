@@ -1,0 +1,31 @@
+{
+  "name": "inference-bench",
+  "private": true,
+  "description": "Time and list-price cost of serving the same agent workload across inference providers",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "record": "tsx --env-file-if-exists=.env src/record.ts",
+    "bench": "tsx --env-file-if-exists=.env src/bench.ts",
+    "report": "tsx src/report.ts",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^4.0.99",
+    "@ai-sdk/openai": "^4.0.111",
+    "@ai-sdk/openai-compatible": "^3.0.87",
+    "ai": "^7.0.165",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@observablehq/plot": "^0.6.17",
+    "@types/jsdom": "^30.0.0",
+    "@types/node": "^26.6.6",
+    "jsdom": "^29.1.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

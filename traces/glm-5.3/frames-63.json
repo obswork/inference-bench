@@ -1,0 +1,92 @@
+{
+  "id": "frames-63",
+  "question": "In the style of wrestling performed by former Greek wrestler Mikhail Theodoropoulos, who won the inaugural olympic medal?",
+  "answer": "Carl Schuhmann.",
+  "recordedWith": "modal/glm-5.3",
+  "messages": [
+    {
+      "role": "user",
+      "content": "In the style of wrestling performed by former Greek wrestler Mikhail Theodoropoulos, who won the inaugural olympic medal?"
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_0",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "Mikhail Theodoropoulos Greek wrestler"
+          }
+        },
+        {
+          "type": "tool-call",
+          "toolCallId": "call_1",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "Greco-Roman wrestling first Olympic champion"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_0",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Mikhail Theodoropoulos: Mikhail Theodoropoulos (born 1933) is a Greek wrestler. He competed in the men&#039;s Greco-Roman bantamweight at the 1960 Summer Olympics. Evans, Hilary; Gjerde\nList of people from Greece: Anton Christoforidis, boxer Stephanos Christopoulos, wrestler Constantine II, former King of Greece, 1960 Olympic champion in sailing (Dragon class) Ioannis\nWrestling at the 1960 Summer Olympics – Men's Greco-Roman bantamweight: been worth only 2 points). Ties were now allowed, worth 2 points for each wrestler. The elimination threshold was also increased from 5 points to 6 points\nWrestling at the 1959 Mediterranean Games: The wrestling tournament at the 1959 Mediterranean Games was held in Beirut, Lebanon.   *   Host nation (Lebanon) 1959 Mediterranean Games report at the\nList of ties for medals at the Olympics: original on 25 March 2017. Retrieved 24 November 2017. &quot;Stockholm 1912 Wrestling Greco-Roman - Results &amp; Videos&quot;. International Olympic Committee. Archived"
+          }
+        },
+        {
+          "type": "tool-result",
+          "toolCallId": "call_1",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "List of World and Olympic Champions in Greco-Roman wrestling: are wrestlers who were World or Olympic Champions in Greco-Roman wrestling. Greco-Roman wrestling competition was held at the first modern Olympics in\nGreco-Roman wrestling: Greco-Roman (American English) (spelled Graeco- or Græco- in British English) or classic wrestling (European English) is a style of wrestling that is\nArtur Aleksanyan: Ալեքսանյան, born 21 October 1991) is an Armenian Greco-Roman wrestler. He is a gold medalist Olympic Champion (2016) as well as silver medalist (2021, 2024)\nHasrat Jafarov: Goranboy) is an Azerbaijani Greco-Roman wrestler competing in the 67 kg division. He won the gold medal at the 2023 European Wrestling Championships. Jafarov\nKiryl Maskevich: 1998) is a Belarusian Greco-Roman wrestler. He is a silver medalist at both the World Wrestling Championships and the European Wrestling Championships. He"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_2",
+          "toolName": "get_page",
+          "input": {
+            "title": "Carl Schuhmann"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_2",
+          "toolName": "get_page",
+          "output": {
+            "type": "text",
+            "value": "Carl August Berthold Schuhmann (12 May 1869 – 24 March 1946) was a German athlete who won four Olympic titles in gymnastics and wrestling at the 1896 Summer Olympics in Athens, becoming the most successful athlete at the inaugural Olympics of the modern era. He also competed in weightlifting.\n\n\n== Biography ==\nSchuhmann, who was a member of the Berliner Turnerschaft, was a member of the successful German gymnastics team that won the team events in the horizontal bar and parallel bars events. Schuhmann added a third title by winning the horse vault event. He also competed in the parallel bars, horizontal bar, pommel horse, and rings events without success. The only extant information about his placing in those events, besides not being a medallist, is that he placed fifth in the rings competition.\n\nSchuhmann then entered the wrestling competition, which he also won, even though he was much lighter and smaller than most of the other combatants. In the first round, he faced Launceston Elliot of Great Britain and Ireland, who had won the weightlifting competition. Schuhmann won easily. The semifinals resulted in a bye for the German. In the final, he faced Georgios Tsitas of Greece. The match went for 40 minutes before it was determined that it was too dark to continue and the bout was postponed until a second day. The next morning, Schuhmann quickly finished the bout with a win for a gold medal.\nHe also entered the weightlifting competition, placing fourth.\nSchuhmann was one of nine athletes to compete in the long jump. The only information known about his placing in the event is that he was not one of the top four. He also placed fifth in the triple jump and in the bottom three of a seven-man field in the shot put.\nSchuhmann tied for fourth place in the two-handed weightlifting competition now known as the clean and jerk. He and Georgios Papasideris of Greece both lifted 90.0 kilograms.\nIn 1936, he was part of a gymnastics exhibition at the Olympic Stadium.\nHis tombstone at Friedhof Heerstraße is inscribed with the five Olympic Rings, the epitaph \"Germany’s first Olympic champion\", and the legend \"Athens 1896\".\n\n\n== See also ==\nList of multi-sport athletes\nList of multi-sport champions\nList of multiple Olympic gold medalists at a single Games\n\n\n== References ==\n\n\n== External links ==\n\nCarl Schuhmann at World Athletics\nCarl Schuhmann at Tilastopaja (registration required)\nCarl Schuhmann at Athletics Podium\nCarl Schuhmann at the International Wrestling Database\nCarl Schuhmann at Olympics.com\nCarl Schuhmann at Olympedia"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "Mikhail Theodoropoulos was a Greek **Greco-Roman** wrestler (he competed in the men's Greco-Roman bantamweight at the 1960 Rome Olympics). The wrestling competition in that style was held at the first modern Olympics in Athens in 1896, and its inaugural gold medal was won by **Carl Schuhmann of Germany**, who defeated Greek wrestler Georgios Tsitas in the final.\n\nANSWER: Carl Schuhmann (Germany), who won the Greco-Roman wrestling event at the inaugural 1896 Summer Olympics in Athens."
+        }
+      ]
+    }
+  ]
+}

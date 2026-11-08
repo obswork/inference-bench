@@ -1,0 +1,291 @@
+{
+  "id": "frames-112",
+  "question": "As of the financial year ending July 31st 2023, what was the size of the endowment at the university attended by rugby player Fred McLeod?",
+  "answer": "£559.8 million",
+  "recordedWith": "openai/gpt-6.1-sol",
+  "messages": [
+    {
+      "role": "user",
+      "content": "As of the financial year ending July 31st 2023, what was the size of the endowment at the university attended by rugby player Fred McLeod?"
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_0",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "Fred McLeod rugby"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_0",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Fred McLeod: Fred McLeod may refer to: Fred McLeod (golfer) Fred McLeod (sportscaster) Fred McLeod (rugby union) This disambiguation page lists articles about people\nFred McLeod (rugby union): Fred McLeod (2 May 1939 – 25 December 2019) was a Scottish rugby union player. He became the 110th President of the Scottish Rugby Union. McLeod went to\nMacLeod: MacLeod, McLeod and Macleod (/məˈklaʊd/ mə-KLOWD) are surnames in the English language. The names are anglicised forms of the Scottish Gaelic MacLeòid\nJack McLeod (rugby league): Jack McLeod was a New Zealand rugby league footballer who represented New Zealand. Jack McLeod was born on March 18, 1909. His parents were William Sutherland\nTaranaki rugby league team: Tamati; Wille Southorn; Graeme West; Adam Lile; Barry Harvey. Bench: Jack McLeod; Fred White; Lance Moir; Jim Parker; Charles Hunt. As the Taranaki Rockets"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_1",
+          "toolName": "get_page",
+          "input": {
+            "title": "Fred McLeod (rugby union)"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_1",
+          "toolName": "get_page",
+          "output": {
+            "type": "text",
+            "value": "Fred McLeod (2 May 1939 – 25 December 2019) was a Scottish rugby union player. He became the 110th President of the Scottish Rugby Union.\n\n\n== Rugby union career ==\n\n\n=== Amateur career ===\nMcLeod went to Daniel Stewart's College in Edinburgh. He played rugby for the school team.\nHe then played for Stewart's College FP. He played for the club for 23 years until in 1970 a detached retina forced him to quit his playing career.\n\n\n=== Administrative career ===\nHe became a club selector of Stewart's College FP in 1970.\nWhen Stewart's College FP and Melville College FP merged in 1973 to form Stewart's Melville, McLeod became Secretary of the new club. He later became President of  Stewart's Melville.\nIn 1979 he was secretary of the Co-Optimists. He managed them to the final of the Hong Kong Sevens in 1981 and the quarter-finals in 1986. He also took the side on tour to Zimbabwe and later became a President of the Co-Optimists.\nHe was elected to the SRU committee in 1981.\nHe became SRU Vice-president in 1985.\nHe became the 110th President of the Scottish Rugby Union. He served one year from 1996 to 1997.\nHis spell of the Presidency was notable as he had to deal with the new professional era of rugby union in Scotland. Despite the SRU professionalising the District sides, the situation was tense as many still argued that the club sides should be turned professional instead.\nMcLeod was one of the three IRB members who recommended professionalism for the sport in a 1995 report. The National newspaper concluded:  'Fred got pelters for that around Murrayfield but stood his ground and was proven correct' and also backed Jim Telfer in his view that the District sides should be professional and not the club sides.\nMcLeod also had to deal with England's expulsion from the Five Nations Championship in 1996. This was short-term and England played in the next tournament.\nHe had to step in as SRU chairman in 2005 when the previous chairman David Mackay and chief executive Phil Anderton were forced out of the post. This lasted until the summer of that year when Allan Munro took over as chairman; and Gordon McKie became the chief executive.\n\n\n== Tributes ==\nAndy Irvine:\n\nFreddie was rugby through and through. He was a great servant to the game and I really  enjoyed working with him.\n\n\n== References =="
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_2",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "\"Fred McLeod\" university"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_2",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Fred McLeod (sportscaster): 2019). &quot;Fred McLeod, former Detroit sportscaster, dies at 67&quot;. WDIV. Retrieved September 11, 2019. &quot;Longtime Detroit sportscaster Fred McLeod dies at 67&quot;\nFred McLeod (rugby union): Fred McLeod (2 May 1939 – 25 December 2019) was a Scottish rugby union player. He became the 110th President of the Scottish Rugby Union. McLeod went\nTommy Armour: Edinburgh, (formerly Boroughmuir Senior Secondary School) and studied at the University of Edinburgh. During his early golf career, he played at Lothianburn Golf\nCary Middlecoff: from Christian Brothers High School. He played collegiate golf at the University of Mississippi, becoming that school&#039;s first golf All-American in 1939\nLarry Nelson: Willie Anderson 1905 Willie Anderson 1906‡ Alex Smith 1907 Alec Ross 1908 Fred McLeod† 1909 George Sargent 1910 Alex Smith† 1911 John McDermott† 1912 John"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_3",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "\"McLeod\" \"endowment\" university Edinburgh"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_3",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "St. Matthew's University: St. Matthew&#039;s University is owned by Global University Systems, which also owns Saba University School of Medicine and Medical University of the Americas\nAonghus Mór: Alexander III. Edinburgh: Edinburgh University Press. ISBN 978-0-7486-2360-0. Brown, M (2004). The Wars of Scotland, 1214–1371. The New Edinburgh History of\nScottish New Zealanders: 1860s to set aside a land endowment for an institute of higher education. An ordinance of the council established the university in 1869, giving it 100,000\nUniversity of Cape Town: campaign, the university is trying to raise its endowment. As of 2019, its designated endowment stands at R2.5 billion and its undesignated endowment stands\nHulsean Lectures: The Hulsean Lectures were established from an endowment made by John Hulse to the University of Cambridge in 1790. At present, they consist of a series"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_4",
+          "toolName": "get_page",
+          "input": {
+            "title": "University of Edinburgh"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_4",
+          "toolName": "get_page",
+          "output": {
+            "type": "text",
+            "value": "The University of Edinburgh (Scots: University o Edinburgh, Scottish Gaelic: Oilthigh Dhùn Èideann; abbreviated as Edin. in post-nominals) is a public research university based in Edinburgh, Scotland. Founded by the town council under the authority of a royal charter from King James VI in 1582 and officially opened in 1583,  it is one of Scotland's four ancient universities and the sixth-oldest university in continuous operation in the English-speaking world. The university played a crucial role in Edinburgh becoming a leading intellectual centre during the Scottish Enlightenment and contributed to the city being nicknamed the \"Athens of the North\".\nThe three main global university rankings (ARWU, THE, and QS) place the University of Edinburgh within their respective top 40. It is a member of several associations of research-intensive universities, including the Coimbra Group, League of European Research Universities, Russell Group, Una Europa, and Universitas 21. In the fiscal year ending 31 July 2025, the university had a total income of £1.437 billion, with £375.4 million from research grants and contracts. It has the third-largest endowment in the UK, behind only Cambridge and Oxford. The university occupies five main campuses in the city of Edinburgh, which include many buildings of historical and architectural significance, such as those in the Old Town.\nEdinburgh is the fourth-largest university in the United Kingdom by total enrolment and the largest university in Scotland, receiving over 68,000 undergraduate applications per year, making it the fifth-most popular university in the UK by application volume. In 2021, Edinburgh had the seventh-highest average UCAS points among British universities for new entrants. The university maintains strong links to the royal family, with Prince Philip, Duke of Edinburgh, serving as its chancellor from 1953 to 2010, and Anne, Princess Royal, holding the position since March 2011.\nNotable alumni of the University of Edinburgh include inventor Alexander Graham Bell, naturalist Charles Darwin, philosopher David Hume, physicist James Clerk Maxwell, and writers such as Oliver Goldsmith, Sir J. M. Barrie, Sir Arthur Conan Doyle, Sir Walter Scott, and Robert Louis Stevenson.  The university has produced several heads of state and government, including three British prime ministers. Additionally, four UK Supreme Court justices were educated at Edinburgh. As of April 2026, the university has been affiliated with 20 Nobel Prize laureates, four Pulitzer Prize winners, three Turing Award winners, and an Abel Prize laureate and Fields Medalist. Edinburgh alumni have also won a total of ten Olympic gold medals.\n\n\n== History ==\n\n\n=== Early history ===\n\nIn 1557, Bishop Robert Reid of St Magnus Cathedral made a will containing an endowment of 8,000 merks to build a college in Edinburgh. Unusually for his time, Reid's vision for the college included the teaching of rhetoric and poetry, alongside more traditional subjects such as philosophy.\nHowever, the bequest was delayed by more than 25 years due to the religious revolution that led to the Reformation Parliament of 1560. The plans were revived in the late 1570s through efforts by the Edinburgh Town Council, first minister of Edinburgh James Lawson, and Lord Provost William Little. When Reid's descendants were unwilling to pay out the sum, the town council petitioned King James VI and his Privy Council. The King arranged a monetary compromise and granted a royal charter on 14 April 1582, empowering the town council to create a college of higher education. A college established by secular authorities was unprecedented in newly Presbyterian Scotland, as all previous Scottish universities had been founded through papal bulls.\n\nNamed Tounis College (Town's College), the university opened its doors to students on 14 October 1583, with an attendance of 80–90. At the time, the college mainly covered liberal arts and divinity. Instruction began under the charge of a graduate from the University of St Andrews, theologian Robert Rollock, who first served as Regent and from 1586 as principal of the college. Initially, Rollock was the sole instructor for first-year students, and he was expected to tutor the 1583 intake for all four years of their degree in every subject. The first cohort finished their studies in 1587, and 47 students graduated (or \"laureated\") with an M.A. degree. When King James VI visited Scotland in 1617, he held a disputation with the college's professors, after which he decreed that it should henceforth be called the \"Colledge [sic] of King James\". The university was known as both Tounis College and King James' College until it gradually assumed the name of the University of Edinburgh during the 17th century.\nAfter the deposition of King James II and VII during the Glorious Revolution of 1688, the Parliament of Scotland passed legislation designed to root out Jacobite sympathisers amongst university staff. In Edinburgh, this led to the dismissal of Principal Alexander Monro and several professors and regents after a government visitation in 1690. The university was subsequently led by Principal Gilbert Rule, one of the inquisitors on the visitation committee.\n\n\n=== 18th and 19th century ===\n\nThe late 17th and early 18th centuries were marked by a power struggle between the university and town council, which had ultimate authority over staff appointments, curricula, and examinations. After a series of challenges by the university, the conflict culminated in the council seizing the college records in 1704. Relations were only gradually repaired over the next 150 years and suffered repeated setbacks.\nIn 1708, the Principal William Carstares restructured the University, abolishing the regenting system and establishing a Dutch style system of Professors. The newly created Chairs, such as that of Greek and Humanity, were offered to the existing Regents. The university expanded by founding a Faculty of Law in 1707, a Faculty of Arts in 1708, and a Faculty of Medicine in 1726. In 1762, Reverend Hugh Blair was appointed by King George III as the first Regius Professor of Rhetoric and Belles-Lettres. This formalised literature as a subject and marks the foundation of the English Literature department, making Edinburgh the oldest centre of literary higher education in Britain.\nDuring the 18th century, the university was at the centre of the Scottish Enlightenment. The ideas of the Age of Enlightenment fell on especially fertile ground in Edinburgh for several reasons: its origin was secular and democratic; it was organized as a single entity instead of loosely connected colleges, which encouraged academic exchange; it had adopted the more flexible Dutch model of professorship, rather than having student cohorts taught by a single regent; and it lacked land endowments as a source of income, which meant its faculty operated in a more competitive environment. Between 1750 and 1800, this system produced and attracted key Enlightenment figures such as chemist Joseph Black, economist Adam Smith, historian William Robertson, philosophers David Hume and Dugald Stewart, physician William Cullen, and early sociologist Adam Ferguson, many of which taught concurrently. By the time the Royal Society of Edinburgh was founded in 1783, the university was regarded as one of the world's preeminent scientific institutions, and Voltaire called Edinburgh a \"hotbed of genius\" as a result. Benjamin Franklin believed that the university possessed \"a set of as truly great men, Professors of the Several Branches of Knowledge, as have ever appeared in any Age or Country\". Thomas Jefferson felt that as far as science was concerned, \"no place in the world can pretend to a competition with Edinburgh\".\n\nIn 1785, Henry Dundas introduced the South Bridge Act in the House of Commons; one of the bill's goals was to use South Bridge as a location for the university, which had existed in a hotchpotch of buildings since its establishment. The site was used to construct Old College, the university's first custom-built building, by architect William Henry Playfair to plans by Robert Adam. During the 18th century, the university developed a particular forte in teaching anatomy and the developing science of surgery, and it was considered one of the best medical schools in the English-speaking world. Bodies to be used for dissection were brought to the university's Anatomy Theatre through a secret tunnel from a nearby house (today's College Wynd student accommodation), which was also used by murderers Burke and Hare to deliver the corpses of their victims during the 1820s.\nThe Edinburgh snowball riots of 1838 – also known as the 'Wars of the Quadrangle' – occurred when University of Edinburgh students started a snowball fight in \"a spirit of harmless amusement\". However, this turned into a two-day 'battle' at Old College with local Edinburgh residents on South Bridge, which led to the Lord Provost asking for an infantry regiment to be brought from Edinburgh Castle to quell the disturbance. The riot was immortalised in a humorous 92-page account written by the students entitled The University Snowdrop. In 1853, English landscape artist Sam Bough painted the event in watercolour.\n\nAfter 275 years of governance by the town council, the Universities (Scotland) Act 1858 gave the university full authority over its own affairs. The act established governing bodies including a university court and a general council, and redefined the roles of key officials like the chancellor, rector, and principal.\n\nThe Edinburgh Seven were the first group of matriculated undergraduate female students at any British university. Led by Sophia Jex-Blake, they began studying medicine in Edinburgh in 1869. The women faced months of harassment and bullying from professors, students, and the public, which culminated in the Surgeons' Hall riot of November 1870. Although the university blocked them from graduating, their campaign gained national attention and won them many supporters, including Charles Darwin. Their efforts put the rights of women to higher education on the national political agenda, which resulted in the Medical Act 1876 enabling women to practise medicine, and eventually in legislation allowing women to study at all Scottish universities in 1889. The university admitted women to graduate in medicine in 1893. In 2015, the Edinburgh Seven were commemorated with a plaque at the university, and in 2019 they were posthumously granted medical degrees.\n\nTowards the end of the 19th century, Old College was becoming overcrowded. After a bequest from Sir David Baxter, the university started planning new buildings in earnest. Sir Robert Rowand Anderson won the public architectural competition and was commissioned to design new premises for the Medical School in 1877. Initially, the design incorporated a campanile and a hall for examination and graduation, but this was seen as too ambitious. The new Medical School opened in 1884, but the building was not completed until 1888. After funds were donated by politician and brewer William McEwan in 1894, a separate graduation building was constructed after all, also designed by Anderson. The resulting McEwan Hall on Bristo Square was presented to the university in 1897.\n\nThe Students' Representative Council (SRC) was founded in 1884 by student Robert Fitzroy Bell. In 1889, the SRC voted to establish Edinburgh University Union (EUU), to be housed in Teviot Row House on Bristo Square. Edinburgh University Sports Union (EUSU) was founded in 1866, and Edinburgh University Women's Union (renamed the Chambers Street Union in 1964) in October 1905. The SRC, EUU and Chambers Street Union merged to form Edinburgh University Students' Association (EUSA) on 1 July 1973.\n\n\n=== 20th century ===\nDuring World War I, the Science and Medicine buildings had suffered from a lack of repairs or upgrades, which was exacerbated by an influx of students after the end of the war. In 1919, the university bought the land of West Mains Farm in the south of the city for the development of a new satellite campus specialising in the sciences. On 6 July 1920, King George V laid the foundation of the first new building (now called the Joseph Black Building), housing the Department of Chemistry. The campus was named King's Buildings in honour of George V.\n\nNew College on The Mound was originally opened in 1846 as a Free Church of Scotland college, later of the United Free Church of Scotland. Since the 1930s it has been the home of the School of Divinity. Prior to the 1929 reunion of the Church of Scotland, candidates for the ministry in the United Free Church studied at New College, whilst candidates for the Church of Scotland studied in the university's Faculty of Divinity. In 1935, the two institutions merged, with all operations moved to the New College site in Old Town. This freed up Old College for Edinburgh Law School.\n\nThe Polish School of Medicine was established in 1941 as a wartime academic initiative. While it was originally intended for students and doctors in the Polish Armed Forces in the West, civilians were also allowed to take the courses, which were taught in Polish and awarded Polish medical degrees. When the school was closed in 1949, 336 students had matriculated, of which 227 students graduated with the equivalent of an MBChB and a total of 19 doctors obtained a doctorate or MD. A bronze plaque commemorating the Polish School of Medicine is located in the Quadrangle of the old Medical School in Teviot Place.\nOn 10 May 1951, the Royal (Dick) Veterinary College, founded in 1823 by William Dick, was reconstituted as the Royal (Dick) School of Veterinary Studies and officially became part of the university. It achieved full faculty status as Faculty of Veterinary Medicine in 1964.\nIn 1955, the university opened the first department of nursing in Europe for academic study. This department was inspired by the work of Gladys Beaumont Carter and a grant from the Rockefeller Foundation.\nBy the end of the 1950s, there were around 7,000 students matriculating annually, more than doubling the numbers from the turn of the century. The university addressed this partially through the redevelopment of George Square, demolishing much of the area's historic houses and erecting modern buildings such as 40 George Square, Appleton Tower and the Main Library.\nOn 1 August 1998, the Moray House Institute of Education, founded in 1848, merged with the University of Edinburgh, becoming its Faculty of Education. Following the internal restructuring of the university in 2002, Moray House became known as the Moray House School of Education. It was renamed the Moray House School of Education and Sport in August 2019.\n\n\n=== 21st century ===\nIn the 1990s, it became apparent that the old Royal Infirmary of Edinburgh buildings in Lauriston Place were no longer adequate for a modern teaching hospital. Donald Dewar, the Scottish Secretary at the time, authorised a joint project between private finance, local authorities, and the university to create a modern hospital and medical campus in the Little France area of Edinburgh. The new campus was named the BioQuarter. The Chancellor's Building was opened on 12 August 2002 by Prince Philip, housing the new Edinburgh Medical School alongside the new Royal Infirmary of Edinburgh. In 2007, the campus saw the addition of the Euan MacDonald Centre as a research centre for motor neuron diseases, which was part-funded by Scottish entrepreneur Euan MacDonald and his father Donald. In August 2010, author J. K. Rowling provided £10 million in funding to create the Anne Rowling Regenerative Neurology Clinic, which was officially opened in October 2013. The Centre for Regenerative Medicine (CRM) is a stem cell research centre dedicated to the development of regenerative treatments, which was opened in 2012. CRM is also home to applied scientists working with the Scottish National Blood Transfusion Service (SNBTS) and Roslin Cells.\n\nIn December 2002, the Edinburgh Cowgate fire destroyed a number of university buildings, including some 3,000 m2 (32,000 sq ft) of the School of Informatics at 80 South Bridge. This was replaced with the Informatics Forum on Bristo Square, completed in July 2008. Also in 2002, the Edinburgh Cancer Research Centre (ECRC) was opened on the Western General Hospital site. In 2007, the MRC Human Genetics Unit formed a partnership with the Centre for Genomic & Experimental Medicine and the ECRC to create the Institute of Genetics and Molecular Medicine (renamed the Institute of Genetics and Cancer in 2021) on the same site.\nIn April 2008, the Roslin Institute – an animal sciences research centre known for cloning Dolly the sheep – became part of the Royal (Dick) School of Veterinary Studies. In 2011, the school moved into a new £60 million building on the Easter Bush campus, which now houses research and teaching facilities, and a hospital for small and farm animals.\n\nEdinburgh College of Art, founded in 1760, formally merged with the university's School of Arts, Culture and Environment on 1 August 2011. In 2014, the Zhejiang University-University of Edinburgh Institute (ZJE) was founded as an international joint institute offering degrees in biomedical sciences, taught in English. The campus, located in Haining, Zhejiang Province, China, was established on 15 March 2016.\nThe university began hosting a Wikimedian in Residence in 2016. The residency was made into a full-time position in 2019, with the Wikimedian involved in teaching and learning activities within the scope of the University of Edinburgh WikiProject.\nIn 2018, the University of Edinburgh was a signatory to the £1.3 billion Edinburgh and South East Scotland City Region Deal, in partnership with the UK and Scottish governments, six local authorities and all universities and colleges in the region. The university committed to delivering a range of economic benefits to the region through the Data-Driven Innovation initiative. In conjunction with Heriot-Watt University, the deal created five innovation hubs: the Bayes Centre, Edinburgh Futures Institute, Usher Institute, Easter Bush, and one further hub based at Heriot-Watt, the National Robotarium. The deal also included creation of the Edinburgh International Data Facility, which performs high-speed data processing in a secure environment.\nIn September 2020, the university completed work on the Richard Verney Health Centre at its central area campus on Bristo Square. The facility houses a health centre and pharmacy, and the university's disability and counselling services. The university's largest expansion in the 2020s was the conversion of some of the historic Royal Infirmary of Edinburgh buildings in Lauriston Place, which had been vacated in 2003 and partially developed into the Quartermile. The £120 million project created a home for the Edinburgh Futures Institute (EFI), an interdisciplinary hub linking arts, humanities, and social sciences with other disciplines in the research and teaching of complex, multi-stakeholder societal challenges. The EFI officially opened its doors to the public on 4 June 2024.\n\n\n=== Historical links ===\nEdinburgh has several historical links to other universities, chiefly through its influential Medical School and its graduates, who established and developed institutions elsewhere in the world.\n\nColumbia University: had its Medical School founded by Samuel Bard, an Edinburgh medical graduate.\nDalhousie University: Edinburgh alumnus George Ramsay, the 22nd Lieutenant Governor of Nova Scotia, wanted to establish a non-denominational college in Halifax open to all. The school was modelled after the University of Edinburgh, which students could attend regardless of religion or nationality.\nDartmouth College: had its School of Medicine founded by Nathan Smith, an alumnus of Edinburgh Medical School.\nHarvard"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_5",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "\"Fred\" \"McLeod\" \"university\" rugby endowment"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_5",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Wellington College, New Zealand: and Government House. The school was founded in 1867 through a deed of endowment from Sir George Grey, the then Governor of New Zealand. Wellington College\nUniversity of Cape Town: campaign, the university is trying to raise its endowment. As of 2019, its designated endowment stands at R2.5 billion and its undesignated endowment stands\nBlack Action Movement: by African American students against the policies and actions of the University of Michigan. The protests themselves took place on three occasions in\nUniversity of Stirling: 2021. &quot;University student Miller happy to put the miles in to play for Clachnacuddin&quot;. inverness-courier.co.uk. 15 August 2019. Silver, Fred. &quot;Have football\nSt. Peter's Preparatory School: Prep star Jackson awaits his NFL call; Rosario to Florida; former Friar McLeod resurfaces at St. Benedict&#039;s&quot;, The Hudson Reporter, April 25, 2010. Accessed"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_6",
+          "toolName": "get_page",
+          "input": {
+            "title": "University of Stirling"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_6",
+          "toolName": "get_page",
+          "output": {
+            "type": "text",
+            "value": "The University of Stirling (abbreviated as Stir or Shruiglea, in post-nominals; Scottish Gaelic: Oilthigh Sruighlea) is a public university in Stirling, Scotland, founded by a royal charter in 1967. It is located in the Central Belt of Scotland, built within the walled Airthrey Castle estate. \nThe university campus is approximately 360 acres (145 hectares) in size, incorporating the Stirling University Innovation Park and the Dementia Centre. The campus is located in the foothills of the Ochil Hills. In 2002, the University of Stirling and the landscape of the Airthrey Estate was designated by the International Council on Monuments and Sites as one of the UK's top 20 heritage sites of the 20th century. \nAs of 2022, the university has 14,000 part-time and full-time students. Stirling has international degree programme partnerships in China with Hebei Normal University, Singapore with Singapore Institute of Management, and Oman. The university offers a MSc in Human Rights & Diplomacy, which is the only Human Rights and Diplomacy programme in the world taught in partnership with the United Nations Institute for Training and Research.\n\n\n== History ==\nStirling was the first new university to be established in Scotland for nearly 400 years. The original site of the campus was selected from shortlisted competing sites, which include Falkirk, Perth and Inverness. The author of the Robbins Review, which recommended an expansion of the number of universities in the UK during the 1960s, Lord Robbins, was appointed as the university's first chancellor in 1968. In 1967 a house for the university principal Tom Cottrell was completed, designed by architects Morris and Steedman. It was listed as category A in 2009.\n\nThe Pathfoot Building, which represented the first phase of development on the campus, was completed in 1968 and originally housed lecture theatres, offices and classrooms in addition to the 'crush hall' where the university displayed its emerging collection of contemporary Scottish art. The building was extended in 1979 to include a Tropical Aquarium and again in 1987 to include a Virology Unit associated with the university's Institute of Aquaculture. In 1993, the Pathfoot Building was selected by the international conservation organisation DoCoMoMo as one of sixty key Scottish monuments of the post-war era. It was also voted as one of Prospect's 100 best modern Scottish buildings. In 1970, development began on what was subsequently named the Cottrell Building, in memory of the university's first principal Cottrell. It comprises two parallel buildings with cross link corridors and interspersed courtyard gardens. The building today houses most of the university administration, lecture theatres, departmental offices, classrooms and computer laboratories. The University Library, Atrium and MacRobert Centre are housed in an adjoining building, the Andrew Miller Building, which was completed in 1971.\nOn 13 October 1972, during a visit to the new campus by HM The Queen, she was subjected to a rowdy reception by booing students, widely reported in the media. The students were protesting about the lack of social spaces in what was at the time a relatively newly built university. On the 14 October 1972 the University Court ordered an immediate investigation into the students’ behaviour. Twenty-four students allegedly involved were charged for the disruption. Jackie McKie was cleared on 15 December 1972. On February 12 1973 students boycotted the ensuing disciplinary trials. When Linda Quinn, the President of the Council of Students’ Association, appealed against her conviction in early March 1973, students organised a mass demonstration to mark the event. Eventually all charges were dropped. Linda Quinn completed her studies at Stirling. There were no further Royal visits until 2011, when Prince Edward formally opened the refurbished library.\nA department of Business studies was set up in 1982. The Institute of Aquaculture, a research institute specialising in fish farming and genetics, opened the same year. In 1983 it sold 300 acres of land to Wang Laboratories. The R.G. Bomont Building (named after the second University Secretary), which houses the Faculty of Social Science, was completed in 1998. The Iris Murdoch building was opened in 2002 to house The Dementia Services Development Centre, and the Colin Bell Building was completed in 2003.\n\n\n== Campus ==\n\nThe university campus is set within 330 acres (1.3 km2) of grounds beneath the Ochil Hills, 2 miles (3.2 km) from the centre of Stirling, close to the town of Bridge of Allan. It is regularly described as one of the most beautiful campuses in the world and was ranked 1st in the UK for its campus environment in the International Student Barometer 2016. It is situated on the site of the historic Airthrey estate which includes the Robert Adam-designed 18th-century Airthrey Castle and includes the Hermitage woods, Airthrey Loch, Airthrey Golf Course. The Andrew Miller Building incorporates an Atrium, which contains several retail and food outlets including a bookstore, bank and general store. This building links the Library and Robbins' Centre Students' Union and has connecting bridges to the Cottrell Building, on-campus student residences and the MacRobert Arts Centre.  The Library holds over 500,000 volumes and over 9,000 journals. Home to the archives of both the novelist Patrick McGrath and filmmaker Norman McLaren, the Library reopened in August 2010 after a major refurbishment programme. MacRobert Arts Centre is a small theatre and cinema complex open to members of the university community and the general public. The university houses a considerable fine art collection in the Pathfoot Building, comprising over 300 works including paintings, tapestries and sculpture.\nThe university previously maintained campuses in Inverness and Stornoway, which specialised in Nursing and Midwifery. The Highland site was on the outskirts of Inverness within the grounds of Raigmore Hospital. The Western Isles campus was located in Stornoway and the teaching accommodation was part of the Western Isles Hospital. In 2016, it was announced that the University of Stirling would be transferring delivery of its programmes on these campuses to the University of the Highlands and Islands.\n\n\n=== Accommodation ===\n\nThe University of Stirling student accommodation can cater for almost 3,000 students in over 20 properties located on and off campus. Most accommodation is in university halls and located on campus. There are town houses at Alexander Court for families and groups of students. Of the 2,000 rooms located on-campus, 800 were built since 2013 as part of a £40M investment programme in student accommodation which was completed in September 2015.\nHalls of Residence located on campus include: \n\nAndrew Stewart Hall\nWillow Court Flats & Studios\nBeech Court Flats & Studios\nJuniper Court Flats & Studios\nFraser of Allander House\nH H Donnelly House\nMuirhead House\nPolwarth House\nPendreich Way\nSpittal Hill\nResidential buildings located off-campus, within Stirling city centre, include Union Street, Bayne Street, Lyon Crescent, John Forty's Court and Alangrange.\n\n\n=== Sport facilities ===\n\nStirling was designated as Scotland's University for Sporting Excellence by the Scottish Government in 2008. Scholarships are available in five core sports: football, golf, swimming, tennis and triathlon, which allow student athletes to prepare for international competition.\nThe university has a comprehensive range of sports facilities including a 9-hole Airthrey Golf Course and a 50-metre swimming pool completed in 2001 as part of the National Swimming Academy – a partnership between the university, Scottish Swimming and British Swimming. The sports centre also holds the Gannochy National Tennis Centre, badminton and squash courts, a fitness centre, strength and conditioning centre, sports halls and all-weather playing fields available for students, university staff and the public. The campus is the headquarters for a number of sports agencies including the sportscotland institute of sport, Commonwealth Games Scotland, Scottish Swimming and triathlonscotland.\nAt Rio 2016, a number of students and alumni from the university competed for Great Britain. Swimmers included Duncan Scott and Robbie Renwick, who both earned silver medals, as well as Commonwealth gold medalist Ross Murdoch.\nTop seed tennis player Andy Murray and his brother Jamie Murray trained on the university courts when they were young. Gordon Reid, wheelchair Olympic gold medalist in 2016, was a tennis scholar at the university. The university men's and women's golf teams are consistently ranked among the best in Europe.\nThe university's most senior football teams compete in the main Scottish league pyramid; the men's team in the regional fifth tier, and the women's team in the second tier. Lower teams compete in the BUCS Football Leagues. In January 2023, the men's football team made history by reaching the 4th round of the Scottish Cup. Losing 1-0 away to Dundee United.\nIn 2018, the university announced a £20 million transformation of its sports facilities. The project included construction of a new sports centre, which opened in November 2020. The university's new sports centre includes a fitness suite with more than 100 stations, wireless connectivity, three Outrace functional rigs across the new spaces, and new public strength and conditioning area. The University of Stirling is one of the first universities in the UK to install Technogym's new Excite Live range of equipment.\n\n\n=== International degree partnerships ===\nThe university has international degree programme partnerships in Singapore, Oman and Vietnam, with the established partnership with British University Vietnam in 2024.\n\n\n=== Ras al-Khaimah ===\nIn 2018, the university opened a branch in Ras al-Khaimah which is shared by four other satellite campuses in United Arab Emirates. The campus is not accredited by the local Ministry of Education.\n\n\n== Organisation and governance ==\nIn August 2016, the university reorganised into four faculties, the Stirling Management School and the Stirling Graduate School.\n\n\n=== Governance ===\nThe statutes of the university are laid out in its royal charter. University Court is the governing body of the university and the Academic Council looks after academic affairs Day-to-day management of the university is undertaken by Gerry McCormac, the University Principal and Vice-Chancellor.\nIn June 2020, it was announced that Professor McCormac had also been elected to serve as Convener of Universities Scotland by his fellow principals. His two-year term commenced on 1 August 2020, and lasted until 31 July 2022.\nThe university's Chancellor is Lord Jack McConnell. The university's constitution, academic regulations, and appointments are outlined in the university calendar.\n\n\n==== Chancellors ====\nLord Robbins −1967 to 1978\nSir Harold Montague Finniston − 1978 to 1988\n8th Lord Balfour of Burleigh, Robert Bruce − 1988 to 1998\nDame Diana Rigg − 1998 to 2008\nJames Naughtie − 2008 to 2018\nLord Jack McConnell − 2018 to present\n\n\n==== Principals ====\nTom Cottrell – 1967 to 1973 (d. 1973 in office)\nSir Frederick Holliday (Acting Principal) – 1973 to 1975 (d. 2016)\nSir William Alexander Cramond – 1975 to 1981 (d. 2004)\nSir Kenneth (Ken) John Wilson Alexander – 1981 to 1986 (d. 2001)\nArthur (John) Forty – 1986 to 1994\nAndrew Miller − 1994 to 2001\nColin Bell − 2001 to 2003 (d. 2003 in office)\nChristine Hallett − 2005 to 2010\nGerry McCormac − 2010 to present\n\n\n==== University Court ====\nThe university's governing body is the University Court. It has overall responsibility for the management of the university's resources, the ongoing strategic direction of the university and the approval of major developments. The Court meets four times over the course of the academic year. The current Chair of Court is Hamish Grossart.\n\n\n==== Academic Council ====\nAcademic Council is the body responsible for the management of academic affairs, awarding of all degrees, and for the regulation and superintendence of the education, discipline and welfare of the students of the university. The Council consists of various academics and is chaired by the Principal of the university.\n\n\n== Academic profile ==\n\n\n=== Teaching ===\nMost Scottish degree programmes are designed to include four years of study with the intention of providing a broad and flexible education. Stirling has offered four-year, modular degree programmes since the university was first founded. In the 1960s and 1970s Credit Accumulation and Transfer Schemes, which create flexible pathways for students to acquire qualifications, were predominantly used in the US with the UK system operating on a disciplinary progression model. Initially, Stirling's modular approach, and its inherent flexibility, was seen as novel in the UK, but through time, more institutions moved to a semester basis and today almost all universities operate in this way.\nTeaching at Stirling is delivered on a two-semester basis with the academic year beginning in mid-September and the first semester ending in mid-December. The second semester runs from the beginning of January to the end of May each year. At undergraduate level, three modules are taken in the first semester and three in the second. The basic module of study at Stirling is assigned 20 Scottish Credit and Qualifications Framework (SCQF) credit points. Ordinary degrees have a minimum credit total of 360 points.\nThe university offers a wide range of undergraduate and postgraduate courses covering the liberal arts, natural science, management school and health science. Stirling achieved a 5 Star Excellence Award for Teaching by QS Stars in 2016.\n\n\n=== Research ===\nStirling is an interdisciplinary research-intensive University with a range of research activity focused on Health and Wellbeing; Culture and Society; Environment; Enterprise and the Economy; and Sport. The Research Excellence Framework also rated almost three-quarters of research activity either world-leading or internationally excellent.\nThe university is home to some specialist research centres:\n\nCentre for Environment, Heritage and Policy\nStirling Media Research Institute (SMRI)\nStirling Centre for Scottish Studies.\nDementia Services Development Centre\nCentre for Gender and Feminist Studies\nCentre for Transnational Legal Methods\nStirling Environment and Energy Network\nCentre of Postcolonial Studies\nStirling Centre for International Publishing and Communication\nContemporary Portuguese Political History Research Centre\nStirling Centre for Translation, Interpreting and Intercultural Studies\nCentre for Policy, Conflict and Co-Operation\nScottish Law and Innovation Network (SCOTLIN)\nStirling has a research publications database, STORRE, which is a source of free, full-text access research outputs.\n\n\n=== Business links ===\nThe university has major industrial research links through Stirling University Innovation Park. This large science park was founded in 1993 and is located adjacent to the main university campus. It is home to around 50 companies engaging in various forms of research and development. During the 1990s the university built a stand-alone Management Centre on the campus. This developed over time into a Conference Centre with residential accommodation. In 2015, the Management Centre was rebranded the Stirling Court Hotel.\n\n\n=== Reputation and rankings ===\n\nStirling is a mid-ranked, pre-1992 UK university with a reputation for high teaching quality and socially relevant research. It is among the top 50 universities in the world that are under 50 years old – 2nd in the UK and 46th in the world, according to the Times Higher Education World University Rankings, and among the top 40 in the UK in the Complete University Guide.\nThe university is ranked 1st in Scotland and 3rd in the UK for graduate employability according to the Higher Education Statistics Agency, with more than 96% of graduates in employment, or further study, within six months of graduating.\nIn 2016 the University of Stirling achieved 5 stars in the QS World University Rankings in five categories – \"Teaching\", \"Employability\", \"Facilities\", \"Inclusiveness\" and \"Internationalisation\". In The Complete University Guide 2017, Stirling was ranked 1st in the UK for Social Work, 2nd in Scotland for Communication and Media Studies, and 2nd in Scotland for Marketing.\nThe University of Stirling was ranked 5th in Scotland and 40th in the UK for research intensity in the 2014 assessment of research in the UK, the Research Excellence Framework. The university was one of the twenty institutions to be awarded a Queen's Anniversary prize in 2014 – the prize for Higher and Further Education for ground-breaking research, recognising work led by the Institute of Social Marketing into the effects of tobacco, alcohol and food marketing on the health of young people. In March 2016, the University of Stirling Management School was accredited by the Association of MBAs (AMBA) for its MBA and MBM programmes.\n\n\n== Student life ==\n\n\n=== Students' Union ===\nThe University of Stirling Students' Union is based in the university's Robbins Centre Students' Union on campus and is affiliated to the National Union of Students. The union provides students with entertainment, welfare and information services and represents students interests to a range of organisations, including the university. Senior members of the union are entitled to seats on the University Court. The union supports more than 90 clubs and societies. The Sports Union supports 53 sports clubs. The university has student-run media services. Brig has been the campus newspaper since 1969. Air3 Radio was the first campus radio station in Scotland (previously URA – University Radio Airthrey), and AirTV (formerly Videoworks) is a television station for students, set up in 2002.\nThe Students' Union is governed by a board of trustees as well as a Chief Executive. The four sabbatical officers of the SU are the Union President, Sports President, Vice-President Education and Vice-President Communities. Alongside these full-time, paid officers are numerous part-time volunteer executive officers.\nOn 14 November 2022, the student union voted to transition to 100% plant-based catering and all vegan meals within three years. The student union's three cafes will serve menus that are half vegan in 2023–2024 academic year and be fully vegan by 2025. The transition was initiated by the student chapter of Plant-Based Universities. Animal-based agricultural groups on campus criticised the move and student activists faced personal abuse at their homes.\n\n\n== Notable academics and alumni ==\n\n\n=== Academics ===\nDavid W. Bebbington, Professor of History\nDavid Blanchflower, Professor of Economics, former Monetary Policy Committee Member\nA. Norman Jeffares, Emeritus Professor of English. Previously University of Leeds, University of Adelaide, University of Edinburgh, and University of Groningen.\nNorman Longworth, honorary Professor of Lifelong Learning\nNorman MacCaig, reader in poetry\nIvana Markova, Emeritus Professor of Psychology\nGerry McCormac, Principal and Professor of Physics\nJean Redpath, (honorary staff) folk singer\nStewart Sutherland, former lecturer, later Baron Sutherland of Houndwood\nHerbert Wilson, Emeritus Professor of Physics\nWaswa Balunywa, Ugandan Academic and Principal of Makerere University Business School (MUBS)\n\n\n=== Alumni ===\n\n\n== See also ==\nArmorial of UK universities\nList of universities in the United Kingdom\nScottish Aquaculture Innovation Centre\nScottish Political Archive\n\n\n== References ==\n\n\n== External links ==\n\nUniversity of Stirling official website"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_7",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "\"Fred MacLeod\" rugby"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_7",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "No results."
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_8",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "\"Freddie McLeod\""
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_8",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Fred McLeod: Fred McLeod may refer to: Fred McLeod (golfer) Fred McLeod (sportscaster) Fred McLeod (rugby union) This disambiguation page lists articles about people\nThe Shawnee Inn & Golf Resort: Shawnee Open attracted well-known golfers such as Harry Vardon, Ted Ray, Freddie McLeod, and Alex Smith. At the 1913 tournament, Worthington sent a letter to"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_9",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "\"McLeod\" \"Heriot-Watt\""
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_9",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Jim Mather: with the University of Strathclyde. He has been a visiting professor at Heriot-Watt University and fulfils other consultancy and speaking roles. &quot;Ex-minister\nRuth Aylett: poet and political activist. She is a professor of computer science at Heriot-Watt University in Edinburgh, where she specialises in affective computing\nDavid Martin (Scottish politician): and educated in Edinburgh, where he attended Liberton High School then Heriot-Watt University. Prior to entering politics, he worked as a stockbroker&#039;s\nBernadette O'Rourke: the Universidade da Corunha, Dublin City University, NUI Galway and Heriot-Watt University where she has taught Spanish and Sociolinguisitcs. In addition\nForrester RFC: honours include Norrie Rowan and Robert Cunningham (Scottish rugby) and Iain McLeod (Queensland Triathlon Champion 2001). Having been pipped at the post for"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "I couldn’t verify the university from Wikipedia. Its article on [Fred McLeod](https://en.wikipedia.org/wiki/Fred_McLeod_(rugby_union)) says he attended **Daniel Stewart’s College in Edinburgh**, but does not identify a university. Consequently, I can’t reliably link him to an endowment figure for 31 July 2023.\n\nANSWER: Unable to verify from Wikipedia."
+        }
+      ]
+    }
+  ]
+}

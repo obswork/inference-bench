@@ -1,0 +1,129 @@
+{
+  "id": "frames-63",
+  "question": "In the style of wrestling performed by former Greek wrestler Mikhail Theodoropoulos, who won the inaugural olympic medal?",
+  "answer": "Carl Schuhmann.",
+  "recordedWith": "openai/gpt-6.1-sol",
+  "messages": [
+    {
+      "role": "user",
+      "content": "In the style of wrestling performed by former Greek wrestler Mikhail Theodoropoulos, who won the inaugural olympic medal?"
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_0",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "Mikhail Theodoropoulos wrestler"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_0",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Mikhail Theodoropoulos: original on 18 April 2020. Retrieved 16 March 2019. Mikhail Theodoropoulos at the International Wrestling Database Mikhail Theodoropoulos at Olympedia v t e\nWrestling at the 1960 Summer Olympics – Men's Greco-Roman bantamweight: been worth only 2 points). Ties were now allowed, worth 2 points for each wrestler. The elimination threshold was also increased from 5 points to 6 points\nWrestling at the 1959 Mediterranean Games: The wrestling tournament at the 1959 Mediterranean Games was held in Beirut, Lebanon.   *   Host nation (Lebanon) 1959 Mediterranean Games report at the\nList of people from Greece: Theodoridis, football player Georgios Theodoridis, sprinter Ioannis Theodoropoulos, pole vaulter Alexandros Theofilakis, shooter Ioannis Theofilakis, shooter\nList of ties for medals at the Olympics: original on 25 March 2017. Retrieved 24 November 2017. &quot;Stockholm 1912 Wrestling Greco-Roman - Results &amp; Videos&quot;. International Olympic Committee. Archived"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_1",
+          "toolName": "get_page",
+          "input": {
+            "title": "Mikhail Theodoropoulos"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_1",
+          "toolName": "get_page",
+          "output": {
+            "type": "text",
+            "value": "Mikhail Theodoropoulos (born 1933) is a Greek wrestler. He competed in the men's Greco-Roman bantamweight at the 1960 Summer Olympics.\n\n\n== References ==\n\n\n== External links ==\nMikhail Theodoropoulos at the International Wrestling Database\nMikhail Theodoropoulos at Olympedia"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_2",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "Greco-Roman wrestling first Olympic champion 1896"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_2",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "List of World and Olympic Champions in Greco-Roman wrestling: are wrestlers who were World or Olympic Champions in Greco-Roman wrestling. Greco-Roman wrestling competition was held at the first modern Olympics in\nGreco-Roman wrestling: practiced worldwide. Greco-Roman wrestling was included in the first modern Olympic Games in 1896 and has been part of every summer Olympic held since 1904\nWrestling at the 1896 Summer Olympics – Men's Greco-Roman: men&#039;s Greco-Roman was the only wrestling event on the Wrestling at the 1896 Summer Olympics programme. No weight classes existed for the wrestling competition\nUnited States results in Greco-Roman wrestling: Greco-Roman was in 1961. Greco-Roman wrestling was held at the first modern Olympics in 1896 and the first World Championships in Greco-Roman was in\n1896 Summer Olympics: The 1896 Summer Olympics, officially known as the Games of the I Olympiad, and commonly known as Athens 1896 (Greek: Αθήνα 1896), were the first international"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_3",
+          "toolName": "get_page",
+          "input": {
+            "title": "Wrestling at the 1896 Summer Olympics – Men's Greco-Roman"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_3",
+          "toolName": "get_page",
+          "output": {
+            "type": "text",
+            "value": "The men's Greco-Roman was the only wrestling event on the Wrestling at the 1896 Summer Olympics programme.\nNo weight classes existed for the wrestling competition, held in the Panathinaiko Stadium which meant that there would only be one winner among competitors of all sizes. It was the only time that an open wrestling event was held; in 1904, when wrestling returned to the Olympic programme, weight classes were implemented.\nThe rules used were similar to modern Greco-Roman wrestling, although there was no time limit, and not all leg holds were forbidden (in contrast to current rules). Apart from the two Greek contestants, all competitors had previously been active in other sports. The wrestling competition was held on 10 April, except for the continuation of the final match on 11 April.\nThe tournament used ancient Greek single-elimination rules. There were no brackets as under modern single-elimination rules; instead, all participants in a round were paired off with one bye if a round had an odd number of participants left. This format could result in a semifinals round with only 3 competitors (as happened in both the 1896 wrestling and doubles tennis events, which started with 5 wrestlers/pairs: the first round had two matches, with one wrestler/pair having a bye, and the second round had only one match, with another wrestler/pair having a bye; a modern tournament would have had one match in the first round with three byes, leading to two semifinals).\n\n\n== Standings ==\n\n\n== Bracket ==\n\n\n== Competition summary ==\n\n\n=== Quarterfinals ===\nStephanos Christopoulos of Greece faced Momcsilló Tapavicza of Hungary in the first match. The pair were nearly evenly matched, with Christopoulous declared the winner after Tapavicza retired due to injury.\nIn the second match, gymnastics champion Carl Schuhmann of Germany faced the weightlifting champion, Launceston Elliot of the United Kingdom. Schuhmann won easily.\nGeorgios Tsitas, a Greek, had a bye in the first round, joining Christopoulos and Schuhmann as the three semifinalists.\n\n\n=== Semifinals ===\nSchuhmann had a bye for the semifinals, so in the single semifinal match, the two Greeks, Tsitas and Christopoulos, faced off to be Schuhmann's opponent in the final. \nTsitas won after Christopoulous suffered a shoulder injury and was forced to retire; despite this, Christopoulous won the bronze medal.\n\n\n=== Final ===\nIn the final, Tsitas faced Schuhmann, and the bout lasted 40 minutes before it had to be postponed on account of darkness, as the sun had begun to set.\nOn the next morning (11 April), Schuhmann and Tsitas returned to their match, and Schuhmann captured the victory shortly thereafter with a fall.\n\n\n== References ==\n\n\"Wrestling at the 1896 Athina Summer Games: Men's Unlimited Class, Greco-Roman\". sports-reference.com. Archived from the original on 18 April 2020. Retrieved 23 August 2018.\nLampros, S.P.; Polites, N.G.; De Coubertin, Pierre; Philemon, P.J. & Anninos, C. (1897). The Olympic Games: BC 776 – AD 1896. Athens: Charles Beck. (Digitally available at [1] Archived 1 August 2007 at the Wayback Machine)\nMallon, Bill & Widlund, Ture (1998). The 1896 Olympic Games. Results for All Competitors in All Events, with Commentary. Jefferson: McFarland. ISBN 0-7864-0379-9. (Excerpt available at [2] Archived 11 April 2008 at the Wayback Machine)\nSmith, Michael Llewellyn (2004). Olympics in Athens 1896. The Invention of the Modern Olympic Games. London: Profile Books. ISBN 1-86197-342-X."
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "Mikhail Theodoropoulos competed in **Greco-Roman wrestling**, according to [Wikipedia](https://en.wikipedia.org/wiki/Mikhail_Theodoropoulos). The inaugural Olympic event in that style, held at the **1896 Athens Olympics**, was won by Germany’s **Carl Schuhmann**, who defeated Georgios Tsitas in the final ([event details](https://en.wikipedia.org/wiki/Wrestling_at_the_1896_Summer_Olympics_%E2%80%93_Men%27s_Greco-Roman)).\n\nANSWER: Carl Schuhmann."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+# Run the benchmark and open a pull request with the new results, for review before they reach main.
+# Started by hand for now (Actions tab → bench → Run workflow). Needs each provider's API key as a repository
+# secret, and "Allow GitHub Actions to create and approve pull requests" enabled in the repository settings.
+#
+# With `filter` set (e.g. "together"), only matching cells run, to redo part of a run. That only saves the
+# raw results as an artifact, to merge into the run by hand; it doesn't publish anything.
+name: bench
+on:
+  workflow_dispatch:
+    inputs:
+      filter:
+        description: Only run cells matching this (e.g. "together"); leave empty for a full run
+        default: ''
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  bench:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360 # a full run takes 3-4 hours, mostly waiting out rate limits
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 24, cache: npm }
+      - run: npm ci
+      - run: npm run bench -- $FILTER
+        env:
+          FILTER: ${{ inputs.filter }}
+          SAIL_API_KEY: ${{ secrets.SAIL_API_KEY }}
+          MODAL_API_KEY: ${{ secrets.MODAL_API_KEY }}
+          MODAL_ENDPOINT_PREFIX: ${{ secrets.MODAL_ENDPOINT_PREFIX }}
+          WAFER_API_KEY: ${{ secrets.WAFER_API_KEY }}
+          BASETEN_API_KEY: ${{ secrets.BASETEN_API_KEY }}
+          FIREWORKS_API_KEY: ${{ secrets.FIREWORKS_API_KEY }}
+          TOGETHER_API_KEY: ${{ secrets.TOGETHER_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      # Keep the raw results even if the run turns out incomplete and no pull request is opened.
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: results, path: results/*.jsonl }
+      - run: npm run report # fails, and opens no pull request, if any task never completed
+        if: inputs.filter == ''
+      - name: Open a pull request
+        if: inputs.filter == ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          branch="bench/$(date -u +%Y-%m-%d)"
+          git config user.name github-actions
+          git config user.email github-actions@users.noreply.github.com
+          git checkout -b "$branch"
+          git add results README.md assets/banner.svg
+          git commit -m "Benchmark run $(date -u +%F)"
+          git push origin "$branch"
+          gh pr create --title "Benchmark run $(date -u +%F)" --body "New results from a benchmark run. Review the charts and README before merging."

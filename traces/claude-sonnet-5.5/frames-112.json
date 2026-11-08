@@ -1,0 +1,291 @@
+{
+  "id": "frames-112",
+  "question": "As of the financial year ending July 31st 2023, what was the size of the endowment at the university attended by rugby player Fred McLeod?",
+  "answer": "£559.8 million",
+  "recordedWith": "anthropic/claude-sonnet-5.5",
+  "messages": [
+    {
+      "role": "user",
+      "content": "As of the financial year ending July 31st 2023, what was the size of the endowment at the university attended by rugby player Fred McLeod?"
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "I'll start by searching for Fred McLeod, the rugby player."
+        },
+        {
+          "type": "tool-call",
+          "toolCallId": "call_0",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "Fred McLeod rugby player"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_0",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Fred McLeod (rugby union): Fred McLeod (2 May 1939 – 25 December 2019) was a Scottish rugby union player. He became the 110th President of the Scottish Rugby Union. McLeod went to\nMacLeod: footballer Hugh McLeod (politician) (1843–1879), Canadian lawyer Hugh McLeod (rugby union) (1932–2014), Scottish rugby player Iain MacLeod (disambiguation)\nList of Sharks (rugby union) players: rugby union footballers who have played for the Sharks in Super Rugby, the Pro14 and United Rugby Championship competitions, and the European Rugby Champions\nJack McLeod (rugby league): Jack McLeod was a New Zealand rugby league footballer who represented New Zealand. Jack McLeod was born on March 18, 1909. His parents were William Sutherland\nGordon Dixon (rugby union): Gordon Dixon is a Scottish former rugby union player. He was the 118th President of the Scottish Rugby Union. He played for Duns. Dixon became the 118th"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_1",
+          "toolName": "get_page",
+          "input": {
+            "title": "Fred McLeod (rugby union)"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_1",
+          "toolName": "get_page",
+          "output": {
+            "type": "text",
+            "value": "Fred McLeod (2 May 1939 – 25 December 2019) was a Scottish rugby union player. He became the 110th President of the Scottish Rugby Union.\n\n\n== Rugby union career ==\n\n\n=== Amateur career ===\nMcLeod went to Daniel Stewart's College in Edinburgh. He played rugby for the school team.\nHe then played for Stewart's College FP. He played for the club for 23 years until in 1970 a detached retina forced him to quit his playing career.\n\n\n=== Administrative career ===\nHe became a club selector of Stewart's College FP in 1970.\nWhen Stewart's College FP and Melville College FP merged in 1973 to form Stewart's Melville, McLeod became Secretary of the new club. He later became President of  Stewart's Melville.\nIn 1979 he was secretary of the Co-Optimists. He managed them to the final of the Hong Kong Sevens in 1981 and the quarter-finals in 1986. He also took the side on tour to Zimbabwe and later became a President of the Co-Optimists.\nHe was elected to the SRU committee in 1981.\nHe became SRU Vice-president in 1985.\nHe became the 110th President of the Scottish Rugby Union. He served one year from 1996 to 1997.\nHis spell of the Presidency was notable as he had to deal with the new professional era of rugby union in Scotland. Despite the SRU professionalising the District sides, the situation was tense as many still argued that the club sides should be turned professional instead.\nMcLeod was one of the three IRB members who recommended professionalism for the sport in a 1995 report. The National newspaper concluded:  'Fred got pelters for that around Murrayfield but stood his ground and was proven correct' and also backed Jim Telfer in his view that the District sides should be professional and not the club sides.\nMcLeod also had to deal with England's expulsion from the Five Nations Championship in 1996. This was short-term and England played in the next tournament.\nHe had to step in as SRU chairman in 2005 when the previous chairman David Mackay and chief executive Phil Anderton were forced out of the post. This lasted until the summer of that year when Allan Munro took over as chairman; and Gordon McKie became the chief executive.\n\n\n== Tributes ==\nAndy Irvine:\n\nFreddie was rugby through and through. He was a great servant to the game and I really  enjoyed working with him.\n\n\n== References =="
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "This page mentions only a school (Daniel Stewart's College), not a university. Let me check whether there's another Fred McLeod."
+        },
+        {
+          "type": "tool-call",
+          "toolCallId": "call_2",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "Fred McLeod rugby university educated"
+          }
+        },
+        {
+          "type": "tool-call",
+          "toolCallId": "call_3",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "Fred McLeod (disambiguation)"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_2",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "List of Old Harrovians: Database. University of Cambridge. &quot;David McClintock Obituary&quot;. The Daily Telegraph. 19 December 2001. Retrieved 29 August 2019. He was educated at Harrow\nList of University of Edinburgh people: Henry Thomas Sylvester, major Indian Mutiny James John McLeod Innes, lieutenant general Valentine McMaster, Army surgeon Andaman Islands expedition Campbell\n1944 Auckland Rugby League season: The 1944 Auckland Rugby League season was its 36th. The Auckland Rugby League allowed the Point Chevalier club to enter the first grade competition which\n1941 Auckland Rugby League season: Takapuna and educated at Takapuna Grammar School before playing rugby union for Takapuna Rugby Club. He moved to Sydney and joined the rugby league code\nSOAS University of London: master&#039;s degrees, and PhD programmes in nearly every department. The university has educated several heads of state, government ministers, diplomats, central"
+          }
+        },
+        {
+          "type": "tool-result",
+          "toolCallId": "call_3",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Fred McLeod: Fred McLeod may refer to: Fred McLeod (golfer) Fred McLeod (sportscaster) Fred McLeod (rugby union) This disambiguation page lists articles about people\nMary MacLeod: Ruaidh (c.1615 – c.1707), also known as Mary Macleod Mary McLeod (disambiguation) This disambiguation page lists articles about people with the same name.\nMacLeod: MacLeod, McLeod and Macleod (/məˈklaʊd/ mə-KLOWD) are surnames in the English language. The names are anglicised forms of the Scottish Gaelic MacLeòid\nDusty: 1965) John &#039;Dusty&#039; King (1909-1987), American singer and actor born Miller McLeod Dusty Springfield (1939–1999), stage name of English soul and pop singer\nDonald Trump: fourth child of Fred Trump and Mary Anne MacLeod Trump. He is of German and Scottish descent. He grew up with his older siblings, Maryanne, Fred Jr, and Elizabeth"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_4",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "Fred McLeod Stewart's Melville Scottish Rugby Union president obituary university"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_4",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Fred McLeod (rugby union): Fred McLeod (2 May 1939 – 25 December 2019) was a Scottish rugby union player. He became the 110th President of the Scottish Rugby Union. McLeod went to\nList of Scots: (born 1947), former president of Ghana; partly of Scottish descent George Reid (born 1939), second Presiding Officer of the Scottish Parliament 2003–2007\nList of University of Edinburgh people: Scottish international rugby union player Alistair Potts, Commonwealth and British World Champion rower Mark Robertson, Scottish international rugby union\nDeaths in October 2022: the Texas House of Representatives (2003–2021). Bryan Gossman, 71, Scottish rugby union player. Jules Hardy, 90, Canadian neuroscientist. Ted Hayward, 98\nDeaths in March 2022: coach and mentor Kenny McFadden dies&quot;. Archived from the original on 2022-03-24. Retrieved 2022-04-06. Obituary: John McLeod Richard A. Murphy Fallece"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "Let me check the University of Edinburgh people list for a Fred McLeod."
+        },
+        {
+          "type": "tool-call",
+          "toolCallId": "call_5",
+          "toolName": "get_page",
+          "input": {
+            "title": "List of University of Edinburgh people"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_5",
+          "toolName": "get_page",
+          "output": {
+            "type": "text",
+            "value": "This is a list of notable graduates as well as non-graduate former students, academic staff, and university officials of the University of Edinburgh in Scotland. It also includes those who may be considered alumni by extension, having studied at institutions that later merged with the University of Edinburgh. The university is associated with 20 Nobel Prize laureates, three Turing Award winners, an Abel Prize laureate and Fields Medallist, four Pulitzer Prize winners, three Prime Ministers of the United Kingdom, and several Olympic gold medallists.\n\n\n== Government and politics ==\n\n\n=== Heads of state and government ===\n\n\n=== United Kingdom ===\n\n\n==== Cabinet and Party Leaders ====\n\n\n==== Scottish Cabinet and Party Leaders ====\n\n\n==== Current Members of the House of Commons ====\nDouglas Alexander, MP for Lothian East\nCatherine Atkinson, MP for Derby North\nJulia Buckley, MP for Shrewsbury\nWendy Chamberlain, MP for North East Fife\nCharlie Dewhirst, MP for Bridlington and The Wolds\nAnneliese Dodds, MP for Oxford East\nJohn Grady, MP for Glasgow East\nChris Hinchliff, MP for North East Hertfordshire\nNeil Hudson, MP for Epping Forest\nDanny Kruger, MP for East Wiltshire\nJosh MacAlister, MP for Whitehaven and Workington\nJerome Mayhew, MP for Broadland\nPat McFadden, MP for Wolverhampton South East\nCatherine McKinnell, MP for Newcastle upon Tyne North\nDavid Mundell, MP for Dumfriesshire, Clydesdale and Tweeddale\nIan Murray, MP for Edinburgh South\nLouise Sandher-Jones, MP for North East Derbyshire\nPete Wishart, MP for Perth and Kinross-shire\nImogen Walker, MP for Hamilton and Clyde Valley\n\n\n==== Current Members of the House of Lords ====\nJames Bethell, 5th Baron Bethell, Conservative Peer\nChristine Blower, Baroness Blower, Labour Peer\nKathryn Clark, Baroness Clark of Kilwinning, Labour Peer\nLynda Clark, Baroness Clark of Calton, Labour Peer\nWilliam Cullen, Baron Cullen of Whitekirk, Crossbench\nJames Douglas-Hamilton, Baron Selkirk of Douglas, Conservative Peer\nAndrew Dunlop, Baron Dunlop, Conservative Peer\nNeil Davidson, Baron Davidson of Glen Clova, Labour Peer\nRuth Davidson, Baroness Davidson of Lundin Links, Conservative Peer\nMurray Elder, Baron Elder, Labour Peer\nPeter Forster, Lord Spiritual\nGeorge Foulkes, Baron Foulkes of Cumnock, Labour Peer\nAndrew Hardie, Baron Hardie, Crossbench\nDavid Hope, Baron Hope of Craighead, Crossbench\nRichard Keen, Baron Keen of Elie, Conservative peer\nMichael Andrew Foster Jude Kerr, 13th Marquess of Lothian, Conservative Peer\nEleanor Laing, Baroness Laing of Elderslie, Conservative Peer\nJames Lindesay-Bethune, 16th Earl of Lindsay, Conservative Peer\nDonald Mackay, Baron Mackay of Drumadoon, Conservative peer\nJames Mackay, Baron Mackay of Clashfern, Conservative Peer\nMark McInnes, Baron McInnes of Kilwinning, Conservative Peer\nAnne McIntosh, Baroness McIntosh of Pickering, Conservative Peer\nPatrick McLoughlin, Baron McLoughlin, Conservative Peer\nMalcolm Offord, Baron Offord of Garvel, Conservative peer\nAdrian Palmer, 4th Baron Palmer, Crossbench\nRobert Reed, Baron Reed of Allermuir, Crossbench\nNicol Stephen, Baron Stephen, Liberal Democrat Peer\nKeith Stewart, Baron Stewart of Dirleton, Conservative Peer\nAlexander Trees, Baron Trees, Crossbench\nFiona Twycross, Baroness Twycross, Labour Peer\nJim Wallace, Baron Wallace of Tankerness, Liberal Democrat Peer\nJohn Woodcock, Baron Walney, Crossbench\nClifton Wrottesley, 6th Baron Wrottesley, Conservative Peer\n\n\n==== Current Members of the Scottish Parliament ====\nClaire Baker, MSP for Mid Scotland and Fife\nJeremy Balfour, MSP for Lothian\nMaggie Chapman, MSP for North East Scotland\nFoysol Choudhury, MSP for Lothian\nKaty Clark, MSP for West Scotland\nKate Forbes, MSP for Skye, Lochaber and Badenoch\nChristine Grahame, MSP for Midlothian South, Tweeddale and Lauderdale\nLiam Kerr, MSP for North East Scotland\nFulton MacGregor, MSP for Coatbridge and Chryston\nBen Macpherson, MSP for Edinburgh Northern and Leith\nLiam McArthur, MSP for Orkney\nOliver Mundell, MSP for Dumfriesshire\nAlex Rowley, MSP for Mid Scotland and Fife\nLiz Smith, MSP for Mid Scotland and Fife\nKaukab Stewart, MSP for Glasgow Kelvin\nJohn Swinney, MSP for Perthshire North\nSue Webber, MSP for Lothian\nMartin Whitfield, MSP for South Scotland\n\n\n=== United States ===\n\n\n=== Africa ===\nJoseph Ukel Abango, South Sudan Minister of General Education (2011–2013)\nEustace Akwei, Ghanaian Minister for Health (1966–1969)\nPrince Hamid Armah, Ghanaian MP\nAhmed Mohamed Adan, Somali Foreign Minister (1990-1991)\nHerbert Bankole-Bright, political activist in Sierra Leone\nJaya Krishna Cuttaree, Mauritian Minister of Labour, Lands and Housing (1982–2000), Minister of Industry and Trade (2000–2005)\nMoses Da Rocha, Nigerian doctor, journalist and politician\nYusuf Dadoo, former chair of the South African Indian Congress and the South African Communist Party\nUnity Dow, Botswana Minister of Foreign Affairs and International Cooperation (2019–2020), member of the National Assembly\nPatrick Duncan, 6th governor-general of the Union of South Africa, South African Minister for the Interior, Education and Public Health (1921–1924)\nKesaveloo Goonam, South African doctor, Indian nationalist and anti-apartheid activist\nAlex Ibru, Nigerian Minister of Internal Affairs (1993–1995)\nOmar Ali Juma, former vice-president of Tanzania\nDanielle de St. Jorre, Seychelles Minister of Foreign Affairs (1989–1997)\nVedastus Kyalakishaija Kyaruzi, former Permanent Representative of Tanzania to the United Nations\nNazir Karamagi, Tanzanian Minister of Energy and Minerals (2006–2008)\nNelson P. W. Khonje, Speaker of the National Assembly of Malawi (1975–1987)\nPeter Msolla, Tanzanian MP\nShettima Ali Monguno, Nigerian Federal Minister for Airforce and Internal Affairs (1965–1966), Minister for Mines, Power, Petroleum and Energy (1972–1975), President of OPEC (1972–1973)\nJames Moroka, President of the African National Congress (1949–1952)\nAgnes Nyalonje, Malawi Minister of Education (2020–)\nMonty Naicker, anti-apartheid activist and leader of the South African Indian Congress\nFrederick Nanka-Bruce, Ghanaian doctor, journalist and former member of the Ghanaian Parliament\nBandele Omoniyi, Nigerian law student and political activist\nBetty Ogwaro, South Sudanese Minister of Agriculture and Forestry (2011–2014; 2014–2015; 2016–2019)\nSam Ongeri, Kenyan Minister for Education (2008–2012), Minister for Foreign Affairs (2012–2013)\nImrana Alhaji Buba, Nigerian social entrepreneur and political activist\nHae Phoofolo, interim prime minister of Lesotho\nBenjamin Quartey-Papafio, first Ghanaian doctor and member of the Gold Coast Legislative Council\nJohn K Randle, West African doctor and politician\nRichard Sezibera, Rwandan Minister of Foreign Affairs (2018–2019), 4th Secretary-General of the East African Community (2011–2016)\nRichard Akinwande Savage, Nigerian doctor, pan-African politician and newspaper editor\nNoah Wekesa, Kenyan Minister for Forestry and Wildlife (2008–2012), Minister for Education (2007), and Minister for Science (2005–2007)\n\n\n=== Asia ===\nHarini Amarasuriya, Sri Lankan MP\nChu Anping, Chinese journalist and political activist\nMukhtar Ahmed Ansari, Indian nationalist, President of the Indian National Congress (1927–1928)\nKōichirō Asakai, Japanese ambassador to the United States and ambassador to the Philippines who oversaw the signing of U.S.-Japan Security Treaty\nLalith Athulathmudali, Sri Lankan Minister of Trade and Shipping (1977–1984)\nFu Ssu-nien, linguist and historian, one of the leaders of the Chinese May Fourth Movement in 1919\nHsu Hsin-liang, Chairman of Taiwan's Democratic Progressive Party (1992-1993 and 1996–1998) and Magistrate of Taoyuan (1977–1979)\nSir Reginald Johnston, Puyi's tutor and advisor, last Commissioner of British Weihaiwei\nPrakash Karat, General Secretary of the Communist Party of India (Marxist) (2005–2015)\nM. C. M. Kaleel, Sri Lankan Minister of Home Affairs (1960)\nArbab Alamgir Khan, Pakistan Federal Minister for Communications (2012–2013)\nLim Chong Eu, 2nd Chief Minister of Penang (1969–1990) and founder of Parti Gerakan Rakyat Malaysia\nZhang Shizhao, Chinese journalist, educator and Minister of Justice (1924–1925) and Minister of Education (1925)\nWu Zhihui, Chinese linguist and major political figure during the Republic of China (1912–1949)\nHsiao Chia-chi, former Deputy Secretary-General of the Executive Yuan, former Deputy Mayor of Taichung\n\n\n=== Canada ===\n\nWilliam Johnston Almon, former Canadian senator for Halifax\nPeter Boehm, Canadian senator for Ontario\nEdward Borron, former MP for Algoma\nChristy Clark, 35th Premier of British Columbia\nGeorge Ralph Richardson Cockburn, former MP for Toronto Centre\nGeorge Alexander Drummond, former Canadian senator for Quebec, 12th president of the Bank of Montreal\nKirsty Duncan, MP for Etobicoke North, Deputy Leader of the Government in the House of Commons (2019-), Minister for Science (2015–2019)\nAdelbert Edward Hanna, former MP for Lanark South\nRobert James Manion, Canadian cabinet minister, Conservative Leader of the Opposition 1938–1940\nJoseph Morrin, 7th and 9th mayor of Quebec\nSir William MacGregor, 60th governor of Newfoundland\nFrederick Montizambert, first Director General of Public Health in Canada\nAndrew Ross McMaster, former MP for Brome and Provincial Treasurer of Quebec\nClarence Primrose, former Canadian senator for Nova Scotia\nJames Palmer Rankin, former Canadian senator for Ontario\nAlexander David Stewart, former mayor of Hamilton, Ontario\nAlexander Warburton, 7th Premier of Prince Edward Island\nArthur Trefusis Heneage Williams, former MP and Chief Government Whip\n\n\n=== Caribbean ===\nJohn Alcindor, Trinidadian doctor and politician\nCharles Duncan O'Neal, Barbados politician\nEdgar F. Gordon, doctor and trade union leader in Bermuda\nDavid Pitt, Baron Pitt of Hampstead, Grenadian politician, first person of African descent to stand as an MP (in Britain), second person of African descent to sit in the House of Lords\n\n\n=== Europe ===\n\nMina Andreeva, Chief Spokesperson for the European Commission\nGisela Babel, former member of the German Bundestag\nElmar Brok, former MEP for Germany, Chair of the European Parliament Committee on Foreign Affairs (1999–2007; 2012–2017) and President of the Union of European Federalists (2013–2018)\nRebecca Buttigieg, Maltese MP\nBenjamin Constant, French politician and eminent political theorist, Member of the Tribunat (1799–1802), Member of the Council of State (1815), Member of the Chamber of Députés (1819–1830)\nMuriel Casals i Couturier, member of the Parliament of Catalonia\nKatja Dörner, Mayoress of Bonn, Germany\nTedi Dobi, Albanian Minister of Justice (2024-)\nBiljana Đorđević, member of the Serbian National Assembly\nAina Calvo, former Mayoress of Palma, Spain\nFurio Honsell, former mayor of Udine, Italy\nGiorgos Gerapetritis, Greek Minister of State (2019–2023), Minister of Foreign Affairs (2023–)\nJón Baldvin Hannibalsson, Icelandic Minister of Finance (1987–1988), Foreign Minister (1988–1995)\nHarri Jaskari, former member of the Parliament of Finland\nJóhann Páll Jóhannsson, Icelandic Minister for the Environment and Natural Resources (2024-)\nÖgmundur Jónasson, Icelandic Minister of Health (2009) and Minister of the Interior (2011–2013)\nHanna Birna Kristjánsdóttir, 19th Mayor of Reykjavík, Icelandic Minister of the Interior (2013–2014)\nÁrni Mathiesen, Icelandic Minister of Finance (2005–2009)\nRadu Marian, Moldovian MP\nAngelika Niebler, MEP for Germany, Deputy Chairwoman of European People's Party (2015–)\nTheodoros Roussopoulos, Greek Minister of State (2004–2008), President of the Parliamentary Assembly of the Council of Europe (2024-)\nGerhard Schröder (CDU), West German Federal Minister of the Interior (1953–1961), Federal Minister of Foreign Affairs (1961–1966), and Federal Minister of Defence (1966–1969), 1969 presidential candidate\nGustaf Algernon Stierneld, Swedish Prime Minister for Foreign Affairs (1838–1840; 1848–1856)\nPéter Ungár, Member of the National Assembly of Hungary, Leader of LMP – Hungary's Green Party (2022-)\nJerzy Żyżyński, economist and member of the Polish Sejm\n\n\n=== Middle East ===\nNajah al-Attar, former vice president of Syria\nLamis al-Alami, Palestinian Minister of Education (2007–2013)\nMehmet Aydın, Turkish Minister of State (2002–)\nHovhannes Bujicanian, Armenian teacher in the Ottoman Empire\nSaad bin Khalid Al Jabri, Saudi Arabian Minister of State\nYahya bin Mahfoudh al-Mantheri, Omani Chairman of Council of State (2004–2020)\nAbu Bakr al-Qirbi, Yemeni Minister of Foreign Affairs (2001–2014; 2016)\nBassam Talhouni, Jordanian Minister for Justice (2013–2016)\nHikmat Abu Zayd, first female cabinet minister of Egypt\n\n\n=== Oceania ===\n\nRichard Arthur, New South Wales Minister for Public Health (1927–1930)\nSir John Bowser, 26th Premier of Victoria\nSir Thomas Brisbane, former governor of New South Wales whose name gave rise to the Australian city, Brisbane\nFrancis Bugotu, Permanent Representative of the Solomon Islands to the United Nations (1978–1992), Secretary-General of the Pacific Community (1982–1986)\nCyril Cameron, former Australian senator for Tasmania\nSir John Logan Campbell, 17th Mayor of Auckland\nSir Michael Cullen, former deputy prime minister of New Zealand\nJohn Dedman, Australian Minister for War Organisation (1941-1945), Minister for Defence (1946-1949)\nJohn Garland, New South Wales Minister for Justice (1909–1910; 1916–1919)\nSir James Graham, 41st Mayor of Sydney\nSir William MacGregor, 11th governor of Queensland\nMalcolm Mackay, Australian Minister for the Navy (1971–1972)\nJohn Alexander MacPherson, 7th Premier of Victoria\nAndrew McLachlan, Australian senator for South Australia, Deputy President of the Australian Senate (2022-)\nF. Russell Miller, 40th Mayor of Invercargill, New Zealand\nSir David Monro, 2nd Speaker of the New Zealand House of Representatives\nSir Hugh Nelson, 11th Premier of Queensland\nCarty Salmon, 2nd Speaker of the Australian House of Representatives\nDavid Seath, New Zealand Minister of Internal Affairs (1963–1972)\nSir Alexander Stuart, 9th Premier of New South Wales\nHenry Thacker, 32nd Mayor of Christchurch, New Zealand\n\n\n== Royalty ==\n\nMahidol Adulyadej, the Prince Father, founder of the House of Mahidol, father to Thai King Rama VIII and King Rama IX\nAlbert, 12th Prince of Thurn and Taxis, head of the House of Thurn and Taxis\nCountess Alexandra Nikolaevna Tolstoy-Miloslavsky, member of the Tolstoy family\nArchibald Campbell, 3rd Duke of Argyll\nDavid Carnegie, 4th Duke of Fife\nCharles Carnegie, Earl of Southesk, heir apparent to the Dukedom of Fife\nSamuel Chatto and Arthur Chatto, sons of Elizabeth II's niece Lady Sarah Chatto\nEdward VII, King of the United Kingdom and Emperor of India\nGeorge Percy, Earl Percy, heir apparent to the Dukedom of Northumberland\nHenry FitzRoy, 12th Duke of Grafton, direct male-line descendant of Charles II of England\nLady Amelia Windsor, a relative of the British royal family\nMargareta of Romania, Custodian of the Crown of Romania\nLady Marina Windsor, a relative of the British royal family\nMako Komuro, former member of the Imperial House of Japan\nPrincess Nora zu Oettingen–Spielberg, member of the House of Oettingen-Spielberg\nPrincess Raiyah bint Hussein, member of the House of Hashim\nPrincess Salha bint Asem, member of the House of Hashim\nPrincess Tsuguko of Takamado, member of the Imperial House of Japan\nPrince Pavel Mikhailovich Dashkov, Russian aristocrat\nLouis Spencer, Viscount Althorp, heir apparent to the Spencer earldom and first cousin of the Duke of Cambridge and Prince Harry\nBhagvat Singh, former maharaja of the princely state of Gondal\n\n\n== Judges and lawyers ==\n\n\n== Military ==\n\n\n=== Officers ===\n\nRalph Abercromby, MP, Commander-in-Chief, Ireland during the Irish Rebellion of 1798\nSir Archibald Alison, 2nd Baronet, general\nSir James Baird, lieutenant general, Director General Army Medical Services (1973–1977)\nSir Hugh Beach, general, Deputy Commander-in-Chief Field Army (1976–1977)\nThomas Cochrane, 10th Earl of Dundonald, Naval flag officer during the Napoleonic Wars and later Admiral of the Red, dubbed by Napoleon as le Loup des Mers, 'the Sea Wolf'\nDavid Coulter, major-general, Chaplain General of the British Army (2014–2018)\nRobert Craigie, admiral\nSir Hew Whitefoord Dalrymple, general, Governor of Gibraltar (1806–1808)\nJohn Forbes, brigadier-general, commanded the Forbes Expedition during the French-Indian war\nSir Alexander Hood, lieutenant-general, Director General Army Medical Services (1941–1948), Governor of Bermuda (1949–1955)\nJohn Hunter, vice-admiral of the red, governor of New South Wales (1795–1800)\nJames Francis Edward Keith, Scottish Jacobite, served during the Seven Years' War under Frederick the Great as Generalfeldmarschall of the Prussian Army\nDaniel Knobel, lieutenant general, Surgeon General of the South African Defence Force (1988–1997)\nWilliam Thompson Lusk, Assistant adjutant-general for the Union, American Civil War\nGregor MacGregor, Army general, adventurer, and confidence trickster, known for his \"Poyois scheme\"\nSir George Malcolm, general\nSir Harold Martin, air marshal, Commander-in-Chief RAF Germany (1970–1973)\nSir Ian McGeoch, vice-admiral\nSir James McGrigor, responsible for the creation of the Royal Army Medical Corps\nIain McNicoll, air marshal, Deputy Commander-in-Chief Operations, RAF Air Command (2007–2010)\nSir Charles Napier, admiral, served in War of 1812, the Napoleonic Wars, and the Crimean War\nDame Sharon Nesmith, first woman to command a British Army brigade, general and vice-chief of the General Staff (2024–)\nArthur Edward Potts, major general, Commander of 6th Canadian Infantry Division (1942–1943)\nPhilip Raffaelli, Surgeon-General of the United Kingdom Armed Forces (2009–2012)\nGeorge Ramsay, 9th Earl of Dalhousie, governor of Canada (1820–1828), Commander-in-Chief, India (1830–1832)\nAlan Reay, lieutenant general, Director General Army Medical Services (1981–1984)\nThomas Rimmer, air vice-marshal, commander, British Forces Cyprus (2000–2003)\nSir James Simpson, general, Commander-in-Chief British troops in the Crimea (1855)\nAndrew Rutherford, 1st Earl of Teviot, lieutenant-general under Louis XIV when England was in Interregnum, governor of Tangier (1663–1664)\nSir Charles Shaw, brigadier-general during the Portuguese Liberal Wars\nAdam Stephen, Scottish-American general in the Continental Army during the American Revolutionary War\nJames Stuart, general, 1st General Officer Commanding, Ceylon (1796)\nMona Chalmers Watson, head of Women's Army Auxiliary Corps\nBennett H. Young, lieutenant, Confederate officer who led the St. Albans Raid during the American Civil War\n\n\n=== Soldiers ===\n\nEric Brown, Royal Navy officer and test pilot who flew 487 types of aircraft, more than anyone else in history\nWilliam Brydon, the only person to reach safety in the 1842 retreat from Kabul\nJames Marr Brydone, Ship's surgeon of HMS Thunderer at Battle of Trafalgar\nCharles Gray Catto, World War I flying ace, later Mayor of Waco, Texas\nGordon Duncan, Scottish flying ace\nJames Oliver Ewart, intelligence officer, translator, and staff member of Field Marshal Bernard Montgomery\nJohn Todd, Scottish First World War flying ace credited with 18 aerial victories\n\n\n=== Victoria Cross and George Cross recipients ===\nRecipients of the Victoria Cross:\n\nCrimean War\nWilliam Henry Thomas Sylvester, major\nIndian Mutiny\nJames John McLeod Innes, lieutenant general\nValentine McMaster, Army surgeon\nAndaman Islands expedition\nCampbell Mellis Douglas, lieutenant Colonel\nSecond Boer War\nSir William Babtie, Lieutenant-general\nHenry Edward Manning Douglas, major-general\nFirst World War\nAllan Ker, major\nArthur Moore Lascelles, captain\nDavid Lowe MacIntyre, captain\nHarcus Strachan, lieutenant colonel\nRecipients of the George Cross:\n\nSecond World War\nDouglas Ford, captain\nJohn Fraser, major\nSandy Hodge, captain\nCharles Howard, 20th Earl of Suffolk, bomb disposal expert\n\n\n== Natural sciences, engineering and medicine ==\n\n\n=== Astronomy ===\n\n\n=== Chemistry"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "That doesn't help. The Wikipedia article only gives Daniel Stewart's College, which is a school. Let me check the school's page in case it is described differently there."
+        },
+        {
+          "type": "tool-call",
+          "toolCallId": "call_6",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "Daniel Stewart's College Edinburgh"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_6",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Erskine Stewart Melville: of Daniel&#039;s Stewart&#039;s College and Melville College. Daniel Stewart&#039;s College opened as Daniel Stewart&#039;s Hospital in 1848, being renamed to Daniel Stewart&#039;s\nMaurice Ewing (surgeon): captain with the Northern Lighthouse Board. He was educated at Daniel Stewart&#039;s College, Edinburgh where he was captain and dux of the school and a member of\nAndrew Faulds: educated at George Watson&#039;s College, Edinburgh, King Edward VI Grammar School, Louth, Daniel Stewart&#039;s College, Edinburgh, and Stirling High School. He\nStewart's Melville RFC: former pupils of the Stewart&#039;s Melville College (formed in a merger of Daniel Stewart&#039;s College and Melville College) in Edinburgh. This remains the case\nStewart's College FP: facilities in Edinburgh. Daniel Stewart&#039;s College merged with Melville&#039;s College in 1973. The college&#039;s former pupil rugby clubs - Stewart&#039;s College FP and Melville"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_7",
+          "toolName": "get_page",
+          "input": {
+            "title": "Fred McLeod"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_7",
+          "toolName": "get_page",
+          "output": {
+            "type": "text",
+            "value": "Fred McLeod may refer to:\n\nFred McLeod (golfer)\nFred McLeod (sportscaster)\nFred McLeod (rugby union)"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "Neither of the others is a rugby player. A different \"Fred McLeod\" might be listed under another spelling, so I'll search once more."
+        },
+        {
+          "type": "tool-call",
+          "toolCallId": "call_8",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "Fred McLeod rugby union player born studied at University"
+          }
+        },
+        {
+          "type": "tool-call",
+          "toolCallId": "call_9",
+          "toolName": "search_wikipedia",
+          "input": {
+            "query": "Frederick McLeod rugby union international"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_8",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "2022 deaths in the United Kingdom: 1923). David McKee, writer and illustrator (Elmer the Patchwork Elephant, Not Now, Bernard) (b. 1935). Tom Smith, Scottish rugby union player (Northampton\nList of University of Edinburgh people: university officials of the University of Edinburgh in Scotland. It also includes those who may be considered alumni by extension, having studied at institutions\nList of Old Harrovians: England at cricket and rugby Gurth Hoyer-Millar (1929–2014), Scottish rugby union player and first-class cricketer Maro Itoje (1994–), England rugby squad\nList of Scots: international rugby player Bernard Gallacher (born 1949), professional golfer Drew Galloway (born 1985), professional wrestler Richie Gray (born 1989), rugby player\nCulture of Australia: 1970s. Notable Australian rugby union players include Sir Edward Dunlop, John Eales, Mark Ella and David Campese. In 1908, rugby league was established in"
+          }
+        },
+        {
+          "type": "tool-result",
+          "toolCallId": "call_9",
+          "toolName": "search_wikipedia",
+          "output": {
+            "type": "text",
+            "value": "Norman McLeod (rugby union): Norman Frederick McLeod (30 June 1856 – 20 April 1921) was an English rugby union forward who represented the England national side in 1879. He later served\nList of rugby union players who have represented more than one nation: rugby union players who have played for more than one national team over the course of their career. The rules governing eligibility in international\nList of New Zealand double-international sportspeople: uniquely not only played international cricket and rugby union but also officiated as a test cricket umpire and international rugby referee. Eddie Dawkins\nDonald James Sim McLeod: Frederick McLeod, who later became an engineer in British India and an international rugby player for the England national rugby union team. McLeod entered\nList of international rugby union families: The following is a list of related people who have played international rugby union. Felipe Contepomi and Manuel Contepomi; twin brothers Ignacio Fernández"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "I could not answer this, because the premise doesn't hold on Wikipedia. The only rugby player named Fred McLeod is the Scottish Rugby Union president (1939–2019). His page says only that he went to Daniel Stewart's College in Edinburgh, which was a school. It merged with Melville College in 1973 and is now part of Stewart's Melville.\n\nThe page gives no university for him, and the Fred McLeod disambiguation page lists only a golfer and a sportscaster besides him. A name search turned up Norman Frederick McLeod, an England rugby international from 1879, but not under the name Fred. I haven't checked where he studied.\n\nWithout a university, there is no endowment figure for the financial year ending 31 July 2023 that I can verify. If you meant a different player or a specific university, tell me which and I'll look up the endowment.\n\nANSWER: Unable to determine. Wikipedia lists no university for the rugby player Fred McLeod, only the school Daniel Stewart's College."
+        }
+      ]
+    }
+  ]
+}
