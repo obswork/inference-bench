@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/banner.svg" alt="Providers: Sail, Wafer, Modal, Baseten, Fireworks, Together AI, Vultr, OpenAI, Anthropic" width="860"></p>
+<p align="center"><img src="assets/banner.svg" alt="Providers: Sail, Wafer, Modal, Baseten, Fireworks, Together AI, Vultr, OpenCode Zen, OpenAI, Anthropic"></p>
 
 # inference-bench
 
@@ -28,7 +28,7 @@ providers, not model intelligence.
 
 ![caching](results/charts/caching.svg)
 
-<sub>Last 30 days of runs: 2026-11-09 to 2026-11-10. Data: [summary](results/summary.csv), [raw results](results/).</sub>
+<sub>Last 30 days of runs: 2026-11-09 to 2026-11-11. Data: [summary](results/summary.csv), [raw results](results/).</sub>
 <!-- results:end -->
 
 ## Methodology
@@ -68,6 +68,8 @@ npm run report                    # update the charts above and results/summary.
   Responses API, while everything else here uses Chat Completions. It doesn't stream, so its time isn't
   split into waiting and generating. On it, Kimi K3.1 Pro often ends a turn without making the tool call it
   describes, which would stop a real agent, so its numbers may be slightly optimistic.
+- OpenCode Zen is a gateway rather than an inference provider. It forwards each request to providers it
+  doesn't name, so its numbers include that routing.
 - Spot tiers, like Fireworks', are left out. Their capacity varies too much to measure fairly in a single run.
 - Providers may run the same model differently, for example at a different precision. That's part of what's
   compared.

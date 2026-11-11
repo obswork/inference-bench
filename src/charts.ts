@@ -22,7 +22,7 @@ export type CellSummary = {
 
 const MODELS: Record<string, string> = {
   'glm-5.3': 'GLM-5.3', 'kimi-k3.1-pro': 'Kimi K3.1 Pro', 'deepseek-v4.1-flash': 'DeepSeek V4.1 Flash',
-  'gpt-6.1-sol': 'GPT-6.1 Sol', 'gpt-6.1-terra': 'GPT-6.1 Terra', 'gpt-6-luna': 'GPT-6 Luna','claude-sonnet-5.5': 'Claude Sonnet 5.5', 'claude-haiku-5.5': 'Claude Haiku 5.5',
+  'gpt-6.1-sol': 'GPT-6.1 Sol', 'gpt-6.1-terra': 'GPT-6.1 Terra', 'gpt-6-luna': 'GPT-6 Luna', 'claude-sonnet-5.5': 'Claude Sonnet 5.5', 'claude-haiku-5.5': 'Claude Haiku 5.5',
 };
 const PROVIDERS: Record<string, { name: string; logo: string }> = {
   modal: { name: 'Modal', logo: 'modal' },
@@ -37,6 +37,7 @@ const PROVIDERS: Record<string, { name: string; logo: string }> = {
   'fireworks-ultrafast': { name: 'Fireworks · ultrafast', logo: 'fireworks' },
   together: { name: 'Together AI', logo: 'together' },
   vultr: { name: 'Vultr', logo: 'vultr' },
+  opencode: { name: 'OpenCode Zen', logo: 'opencode' },
   openai: { name: 'OpenAI', logo: 'openai' },
   anthropic: { name: 'Anthropic', logo: 'anthropic' },
 };
@@ -265,27 +266,37 @@ export function charts(summary: CellSummary[]) {
  */
 export function banner(providers: string[]) {
   const NAMES: Record<string, string> = {
-    sail: 'Sail', wafer: 'Wafer', modal: 'Modal', baseten: 'Baseten', fireworks: 'Fireworks', together: 'Together AI', vultr: 'Vultr', openai: 'OpenAI', anthropic: 'Anthropic',
+    sail: 'Sail', wafer: 'Wafer', modal: 'Modal', baseten: 'Baseten', fireworks: 'Fireworks', together: 'Together AI', vultr: 'Vultr', opencode: 'OpenCode Zen', openai: 'OpenAI', anthropic: 'Anthropic',
   };
   // Width of each mark's visible glyph as a share of its square logo box (the rest is even side padding).
-  const GLYPH: Record<string, number> = { baseten: 0.62, fireworks: 0.97, together: 0.76, sail: 0.81, modal: 0.97, wafer: 0.7, vultr: 0.94, openai: 0.78, anthropic: 0.75 };
+  const GLYPH: Record<string, number> = { baseten: 0.62, fireworks: 0.97, together: 0.76, sail: 0.81, modal: 0.97, wafer: 0.7, vultr: 0.714, opencode: 0.45, openai: 0.78, anthropic: 0.75 };
   // Helvetica Bold advance widths (per 1000 units of font size) for the letters in the names.
   const ADVANCE: Record<string, number> = {
     ' ': 278, B: 722, F: 611, T: 611, V: 667, u: 611, g: 611, k: 556, s: 556, w: 778, y: 556,
-    A: 722, I: 278, M: 833, O: 778, S: 667, W: 944, a: 556, c: 556, d: 611, e: 556, f: 333, h: 611, i: 278, l: 278, n: 611, o: 611, p: 611, r: 389, t: 333,
+    A: 722, C: 722, Z: 611, I: 278, M: 833, O: 778, S: 667, W: 944, a: 556, c: 556, d: 611, e: 556, f: 333, h: 611, i: 278, l: 278, n: 611, o: 611, p: 611, r: 389, t: 333,
   };
   const SIZE = 36, FONT_SIZE = 18, MARK_TO_NAME = 10, GAP = 44, GRAY = '#7d8590';
   const textWidth = (text: string) => [...text].reduce((w, c) => w + (ADVANCE[c] ?? 600), 0) * FONT_SIZE / 1000;
 
-  let x = 0; // left edge of the next visible glyph
-  const items = providers.map((p) => {
-    const glyph = SIZE * GLYPH[p];
-    const boxX = x - (SIZE - glyph) / 2;
-    const item = `<image href="${logo(p, GRAY, true)}" x="${boxX.toFixed(1)}" y="0" width="${SIZE}" height="${SIZE}"/>` +
-      `<text x="${(x + glyph + MARK_TO_NAME).toFixed(1)}" y="25" font-size="${FONT_SIZE}" font-weight="700" fill="${GRAY}">${NAMES[p]}</text>`;
-    x += glyph + MARK_TO_NAME + textWidth(NAMES[p]) + GAP;
-    return item;
+  // Up to five providers per row, with rows balanced (9 → 5 + 4) and each one centered.
+  const PER_ROW = 5, ROW_GAP = 20, SCALE = 0.85; // SCALE sets the displayed size
+  const rowCount = Math.ceil(providers.length / PER_ROW);
+  const perRow = Math.ceil(providers.length / rowCount);
+  const rows = Array.from({ length: rowCount }, (_, i) => {
+    let x = 0; // left edge of the next visible glyph
+    const items = providers.slice(i * perRow, (i + 1) * perRow).map((p) => {
+      const glyph = SIZE * GLYPH[p];
+      const boxX = x - (SIZE - glyph) / 2;
+      const item = `<image href="${logo(p, GRAY, true)}" x="${boxX.toFixed(1)}" y="0" width="${SIZE}" height="${SIZE}"/>` +
+        `<text x="${(x + glyph + MARK_TO_NAME).toFixed(1)}" y="25" font-size="${FONT_SIZE}" font-weight="700" fill="${GRAY}">${NAMES[p]}</text>`;
+      x += glyph + MARK_TO_NAME + textWidth(NAMES[p]) + GAP;
+      return item;
+    });
+    return { items, width: x - GAP };
   });
-  const width = Math.ceil(x - GAP + 8); // a little slack for font differences
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${SIZE}" viewBox="-4 0 ${width} ${SIZE}" font-family='${FONT}'>\n${items.join('\n')}\n</svg>\n`;
+  const width = Math.ceil(Math.max(...rows.map((r) => r.width)) + 8); // a little slack for font differences
+  const height = rowCount * SIZE + (rowCount - 1) * ROW_GAP;
+  const body = rows.map((r, i) =>
+    `<g transform="translate(${((width - 8 - r.width) / 2).toFixed(1)} ${i * (SIZE + ROW_GAP)})">\n${r.items.join('\n')}\n</g>`);
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${Math.round(width * SCALE)}" height="${Math.round(height * SCALE)}" viewBox="-4 0 ${width} ${height}" font-family='${FONT}'>\n${body.join('\n')}\n</svg>\n`;
 }
